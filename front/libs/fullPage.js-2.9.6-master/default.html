@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/libs/fullPage.js-2.9.6-master/jquery.fullPage.css"/>
+	<script type="text/javascript" src="/libs/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="/libs/fullPage.js-2.9.6-master/vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="/libs/fullPage.js-2.9.6-master/jquery.fullPage.js"></script>
+	<style type="text/css">
+		#fullpage{}
+		#fullpage > .section{}
+		#fullpage > .section > .fp-tableCell > .inside{ outline:1px dashed red; box-shadow:0px 0px 10px red; }
+		#fullpage > .section > .fp-tableCell > .inside{ max-width:1280px; margin:0 auto; }
+	</style>
+	<script>
+		$(function(){
+			$('#fullpage').fullpage({
+				//이동
+				menu:'#menu',
+				lockAnchors:false,
+				anchors:['firstPage', 'secondPage'],
+				navigation:false,
+				navigationPosition:'right',
+				navigationTooltips:['firstSlide', 'secondSlide'],
+				showActiveTooltip:false,
+				slidesNavigation:false,
+				slidesNavPosition:'bottom',
+				
+				//스크롤
+				css3:true,
+				scrollingSpeed:700,
+				autoScrolling:true,
+				fitToSection:true,
+				fitToSectionDelay:1000,
+				scrollBar:false,
+				easing:'easeInOutCubic',
+				easingcss3:'ease',
+				loopBottom:false,
+				loopTop:false,
+				loopHorizontal:true,
+				continuousVertical:false,
+				continuousHorizontal:false,
+				scrollHorizontally:false,
+				interlockedSlides:false,
+				dragAndMove:false,
+				offsetSections:false,
+				resetSliders:false,
+				fadingEffect:false,
+				normalScrollElements:'#element1, .element2',
+				scrollOverflow:false,
+				scrollOverflowReset:false,
+				scrollOverflowOptions:null,
+				touchSensitivity:15,
+				normalScrollElementTouchThreshold:5,
+				bigSectionsDestination:null,
+				
+				//접근성
+				keyboardScrolling:true,
+				animateAnchor:true,
+				recordHistory:true,
+				
+				//디자인
+				controlArrows:true,
+				verticalCentered:true,
+				sectionsColor:['#ccc', '#fff'],
+				paddingTop:'3em',
+				paddingBottom:'10px',
+				fixedElements:'#header, .footer',
+				responsiveWidth:0,
+				responsiveHeight:0,
+				responsiveSlides:false,
+				parallax:false,
+				parallaxOptions:{
+					type:'reveal',
+					percentage:62,
+					property:'translate'
+				},
+				cards:false,
+				cardsOptions:{
+					perspective:100,
+					fadeContent:true,
+					fadeBackground:true
+				},
+				
+				//맞춤 선택자
+				sectionSelector:'.section',
+				slideSelector:'.slide',
+				
+				lazyLoading:true,
+				
+				//사건(이벤트)
+				onLeave:function( origin, destination, direction ){
+				},
+				afterLoad:function( origin, destination, direction ){
+				},
+				afterRender:function(){
+				},
+				afterResize:function( width, height ){
+				},
+				afterResponsive:function( isResponsive ){
+				},
+				afterSlideLoad:function( section, origin, destination, direction ){
+				},
+				onSlideLeave:function( section, origin, destination, direction ){
+				}
+			});
+			
+		});
+	</script>
+</head>
+<body>
+<div id="fullpage">
+	<div class="section">
+		<div class="inside">
+			Some section1
+		</div>
+	</div>
+	<div class="section">
+		<div class="inside">
+			Some section2
+		</div>
+	</div>
+</div>
+</body>
+</html>

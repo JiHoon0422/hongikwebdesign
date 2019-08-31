@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo0</title>
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css" />
+	<!---->
+	<link rel="stylesheet" type="text/css" href="/front/libs/tooltipster/css/tooltipster.bundle.css"/>
+	<script type="text/javascript" src="/front/libs/tooltipster/js/tooltipster.bundle.js"></script>
+</head>
+<body>
+<!---->
+<span class="tooltip" title="AAA의 툴팁">AAA</span>
+<!---->
+<div>
+	<span class="tooltip" data-tooltip-content="#tooltip_content">This span has a tooltip with HTML when you hover over it!</span>
+	<div class="tooltip_templates" style="display:none;">
+		<div id="tooltip_content">
+			<ul class="q_list0">
+				<li>
+					<div class="Q">
+						<strong>Q.</strong>
+						<span>무슨 활동을 하나요?</span>
+					</div>
+					<div class="A">
+						2주일에 한번씩 8면의 서강학보를 발행합니다. 신문은 사회면, 문화면, 학내 문제를 다루는 대학면과 특집면으로 이루어져 있습니다. 학기 중에는 일주일을 주기로 다음 신문을 위한 편집회의를 해서 기사를 확정하고 각기 기사를 맡은 기자는 취재를 하고 기사를 작성합니다. 기사가 마감되면 조판소에서 조판을 하고 신문이 나온 후에는 평가회의를 합니다.
+					</div>
+				</li>
+				<li>
+					<div class="Q">
+						<strong>Q.</strong>
+						<span>무슨 활동을 하나요?</span>
+					</div>
+					<div class="A">
+						2주일에 한번씩 8면의 서강학보를 발행합니다. 신문은 사회면, 문화면, 학내 문제를 다루는 대학면과 특집면으로 이루어져 있습니다. 학기 중에는 일주일을 주기로 다음 신문을 위한 편집회의를 해서 기사를 확정하고 각기 기사를 맡은 기자는 취재를 하고 기사를 작성합니다. 기사가 마감되면 조판소에서 조판을 하고 신문이 나온 후에는 평가회의를 합니다.
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		//http://iamceege.github.io/tooltipster/
+		$('.tooltip').tooltipster({
+			maxWidth:800,
+			contentCloning:true
+		});
+	});
+</script>
+</body>
+</html>

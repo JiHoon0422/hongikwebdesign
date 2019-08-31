@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	var DATA_LIST=[
+		{
+			"project_name":"111",
+			"project_desc":"111_desc"
+		},
+		{
+			"project_name":"222",
+			"project_desc":"222_desc"
+		}
+	];
+</script>
+<script type="text/html" class="ksm_tpl" src="DATA_LIST">
+	<h1>{{project_name}}</h1>
+	<h2>{{project_desc}}</h2>
+</script>
+<script type="text/javascript">
+	var url="dummy.json";
+	var param={};
+	var DATA_LIST2;
+	$.ajax({
+		url:url, method:"GET", data:param, dataType:"json", cache:false, async:false, timeout:60*1000
+		, success:function( data, status, xhr ){
+			console.log(data);
+			DATA_LIST2=data;
+		}, error:function( jqXHR, textStatus, errorThrown ){
+			console.log("AJAX ERROR : "+url);
+			console.log(arguments);
+		}
+	});
+</script>
+<script id="tpl180828170756" type="text/html" class="ksm_tpl" src="DATA_LIST2">
+	<h1>{{project_name}}</h1>
+	<h2>{{project_desc}} ddd</h2>
+</script>
+</body>
+</html>

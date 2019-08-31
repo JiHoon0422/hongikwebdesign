@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- subpage_head [2016-04-12] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/reset.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/common.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/styles/subpage.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/underscore-min.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+	<script type="text/javascript" src="/front/scripts/publisher.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/default.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/iframe_auto_fit.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/subpage.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/responsive_board/dist/responsive_board.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/responsive_board/dist/responsive_board.js?ver=20171013"></script>
+	<!-- // subpage_head [2016-04-12] -->
+	<title>홈페이지</title>
+	<script type="text/javascript" src="/js/common.js?ver=20171013"></script>
+	<script type="text/javascript" src="/js/www.js?ver=20171013"></script>
+
+	<style type="text/css">
+		/* 1024이상 - 데스크탑 or 테블릿 가로 이상▲ 화면[1200 PSD]*/
+		@media all and (min-width:1024px){
+			#body > .main{ height:1200px; }
+		}
+		/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+		@media all and (min-width:768px) and (max-width:1023px){
+			#body > .main{ height:1070px; }
+		}
+		/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+		@media all and (max-width:767px){
+			#body > .main{ height:1070px; }
+			/*0831 지훈반영*/
+			.tit0{margin-bottom:46px;}
+			.txtr{margin-bottom:46px;}
+		}
+		
+		#loactionSection{ display:none; }
+	</style>
+</head>
+<body>
+<div class="page">
+	<!-- header [2016-04-22] -->
+	<div id="header">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/header.html');
+		</script>
+	</div>
+	<!-- // header [2016-04-22] -->
+	<!-- body -->
+	<div id="body">
+		<div id="main" class="main">
+			<div id="contents">
+				<style type="text/css">
+					#sub_page_visual{ background-image:url(/front_visual/sub/board.jpg); }
+					/* 1023이하 - 태블릿 세로 이하▼ 화면[768 PSD]*/
+					@media all and (max-width:1023px){
+						#sub_page_visual{ background-image:url(/front_visual/sub/board_TA.jpg); }
+					}
+					/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+					@media all and (max-width:767px){
+						#sub_page_visual{ background-image:url(/front_visual/sub/board_MO.jpg); }
+					}
+				</style>
+				<!-- section -->
+				<div class="section">
+					<div class="tit0">뉴스 & 이벤트</div>
+					<div class="txtr">
+						<div class="selui190625110332">
+							<div class="head">
+								<div class="label">전공별 게시판</div>
+							</div>
+							<div class="body">
+								<div class="option"><a href="nolink">동양화과</a></div>
+								<div class="option"><a href="nolink">회화과</a></div>
+								<div class="option"><a href="nolink">판화과</a></div>
+								<div class="option"><a href="nolink">조소과</a></div>
+								<div class="option"><a href="nolink">시각디자인과</a></div>
+								<div class="option"><a href="nolink">산업디자인과</a></div>
+								<div class="option"><a href="nolink">금속조형디자인과</a></div>
+								<div class="option"><a href="nolink">도예유리과</a></div>
+								<div class="option"><a href="nolink">목조형가구과</a></div>
+								<div class="option"><a href="nolink">섬유패션디자인학과</a></div>
+								<div class="option"><a href="nolink">예술학과</a></div>
+								<div class="option"><a href="nolink">미술대학</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // section -->
+				<!-- <br><br> -->
+				<!-- section -->
+				<div class="section portfolio_sec">
+					<div class="inside">
+						<div class="layout190530091445">
+							
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM<br>
+										바이에른 주립상 수상 바이에른 주립상 수상 바이에른 주립상 수상
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<!--
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="thumb">
+									<div style="background-image:url(http://gifpng.com/410x260?background-color=ffddd4&color=666666);"></div>
+								</div>
+								<div class="info">
+									<div class="part">
+										2019.04.22
+									</div>
+									<div class="name dotdotdot">
+										금속조형디자인 정호연 작가 2019 IHM
+									</div>
+									<div class="title">
+										바이에른 주립상 수상
+									</div>
+								</div>
+							</div>
+							-->
+						</div>
+					</div>
+				</div>
+				<!-- // section -->
+				<!-- <br> -->
+				<!-- section -->
+				<div class="section">
+					<!-- paging0 [2018-10-22] -->
+					<!--PC paging-->
+					<div class="paging0">
+						<ul class="prev_btns btns">
+							<li class="btn_first"><a href="#"><span>처음</span></a></li>
+							<li class="btn_prev"><a href="#"><span>이전</span></a></li>
+						</ul>
+						<ul class="num_btns">
+							<li><a href="#"><span>1</span></a></li>
+							<li class="on"><a href="#"><span>2</span></a></li>
+							<li><a href="#"><span>3</span></a></li>
+							<li><a href="#"><span>4</span></a></li>
+							<li><a href="#"><span>5</span></a></li>
+							<li><a href="#"><span>6</span></a></li>
+							<li><a href="#"><span>7</span></a></li>
+							<li><a href="#"><span>8</span></a></li>
+							<li><a href="#"><span>9</span></a></li>
+							<li><a href="#"><span>10</span></a></li>
+						</ul>
+						<ul class="next_btns btns">
+							<li class="btn_next"><a href="#"><span>다음</span></a></li>
+							<li class="btn_last"><a href="#"><span>마지막</span></a></li>
+						</ul>
+					</div>
+					<!--MOBILE paging-->
+					<div class="paging0 for_mobile">
+						<ul class="prev_btns btns">
+							<li class="btn_first"><a href="#"><span>처음</span></a></li>
+							<li class="btn_prev"><a href="#"><span>이전</span></a></li>
+						</ul>
+						<ul class="num_btns">
+							<li><a href="#"><span>1</span></a></li>
+							<li class="on"><a href="#"><span>2</span></a></li>
+							<li><a href="#"><span>3</span></a></li>
+							<li><a href="#"><span>4</span></a></li>
+							<li><a href="#"><span>5</span></a></li>
+						</ul>
+						<ul class="next_btns btns">
+							<li class="btn_next"><a href="#"><span>다음</span></a></li>
+							<li class="btn_last"><a href="#"><span>마지막</span></a></li>
+						</ul>
+					</div>
+					<!-- // paging0 [2018-10-22] -->
+				</div>
+				<!-- // section -->
+			</div>
+		</div>
+	</div>
+	<!-- // body  -->
+	<!-- footer [2016-04-22] -->
+	<div id="footer">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/footer.html');
+		</script>
+	</div>
+	<!-- // footer [2016-04-22] -->
+</div>
+</body>
+</html>
+
+
+
+

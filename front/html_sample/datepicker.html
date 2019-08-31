@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- subpage_head [2016-04-12] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/reset.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/common.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/styles/subpage.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/underscore-min.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+	<script type="text/javascript" src="/front/scripts/publisher.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/default.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/iframe_auto_fit.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/subpage.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/responsive_board/dist/responsive_board.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/responsive_board/dist/responsive_board.js?ver=20171013"></script>
+	<!-- // subpage_head [2016-04-12] -->
+	<title>홈페이지</title>
+	<script type="text/javascript" src="/js/common.js?ver=20171013"></script>
+	<script type="text/javascript" src="/js/www.js?ver=20171013"></script>
+</head>
+<body>
+<div class="page">
+	<!-- header [2016-04-22] -->
+	<div id="header">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/header.html');
+		</script>
+	</div>
+	<!-- // header [2016-04-22] -->
+	<!-- body -->
+	<div id="body">
+		<div id="main" class="main">
+			<div id="contents">
+				<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.css?ver=20171013"/>
+				<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.date.css?ver=20171013"/>
+				<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.time.css?ver=20171013"/>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/legacy.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/picker.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/picker.date.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/picker.time.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/translations/ko_KR.js?ver=20171013"></script>
+				<!-- section -->
+				<div class="section">
+					<form action="#" method="get">
+						<div><input type="text" class="datepicker inpui" name="date2" placeholder="날짜입력" style="width:100%; font-size:16px;"/></div>
+						<br>
+						<div><input type="text" class="timepicker inpui" name="time" placeholder="시간입력" style="width:100%; font-size:16px;"/></div>
+						<br>
+						<div>
+							<button type="submit" class="btnui"><span>제출</span></button>
+						</div>
+					</form>
+				</div>
+				<!-- // section -->
+				<script type="text/javascript">
+					$(function(){
+						//http://amsul.ca/pickadate.js/
+						//https://github.com/amsul/pickadate.js
+						$('.datepicker').pickadate({
+							// min: new Date(1930,1,1),
+							// max: new Date(2020,12,31),
+							selectYears:true,
+							//selectYears:30,
+							selectMonths:false,
+							format:'yyyy.mm.dd',
+							formatSubmit:'yyyymmdd',
+						});
+
+						$('.timepicker').pickatime({
+							formatSubmit:'HHi'
+						});
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	<!-- // body  -->
+	<!-- footer [2016-04-22] -->
+	<div id="footer">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/footer.html');
+		</script>
+	</div>
+	<!-- // footer [2016-04-22] -->
+</div>
+</body>
+</html>
+
+
+
+

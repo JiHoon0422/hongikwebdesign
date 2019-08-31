@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- subpage_head [2016-04-12] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/reset.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/common.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/styles/subpage.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/underscore-min.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+	<script type="text/javascript" src="/front/scripts/publisher.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/default.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/iframe_auto_fit.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/subpage.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/responsive_board/dist/responsive_board.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/responsive_board/dist/responsive_board.js?ver=20171013"></script>
+	<!-- // subpage_head [2016-04-12] -->
+	<title>홈페이지</title>
+	<script type="text/javascript" src="/js/common.js?ver=20171013"></script>
+	<script type="text/javascript" src="/js/www.js?ver=20171013"></script>
+</head>
+<body>
+<div class="page">
+	<!-- header [2016-04-22] -->
+	<div id="header">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/header.html');
+		</script>
+	</div>
+	<!-- // header [2016-04-22] -->
+	<!-- body -->
+	<div id="body">
+		<div id="main" class="main">
+			<div id="contents">
+				<!-- section -->
+				<div class="section">
+					<style type="text/css">
+						#reserveCalendarWrap{ font-family:NanumSquare; }
+						#reserveCalendarWrap > .head{ }
+						#reserveCalendarWrap > .head > .this_year_box{ width:440px; margin:0 auto; text-align:center; }
+						#reserveCalendarWrap > .head > .this_year_box > *{ display:inline-block; }
+						#reserveCalendarWrap > .head > .this_year_box > .year{ line-height:40px; color:#333333; letter-spacing:-0.05em; font-size:24px; }
+						#reserveCalendarWrap > .head > .this_year_box > .btn_go{ font-size:0; position:absolute; top:0px; }
+						#reserveCalendarWrap > .head > .this_year_box > .btn_prev_year{ left:0px; background:url(/front/imgs/common/btn_cal_prev_year.png) no-repeat; width:52px; height:40px; }
+						#reserveCalendarWrap > .head > .this_year_box > .btn_prev_month{ left:57px; background:url(/front/imgs/common/btn_cal_prev_month.png) no-repeat; width:52px; height:40px; }
+						#reserveCalendarWrap > .head > .this_year_box > .btn_next_month{ right:57px; background:url(/front/imgs/common/btn_cal_next_month.png) no-repeat; width:52px; height:40px; }
+						#reserveCalendarWrap > .head > .this_year_box > .btn_next_year{ right:0px; background:url(/front/imgs/common/btn_cal_next_year.png) no-repeat; width:52px; height:40px; }
+						#reserveCalendarWrap > .body{ margin-top:15px; box-sizing:border-box; border-bottom:1px solid #dddddd; }
+						#reserveCalendarWrap > .body > table{ table-layout:fixed; border-collapse:collapse; width:100%; }
+						#reserveCalendarWrap > .body > table > *{}
+						#reserveCalendarWrap > .body > table > * > tr{}
+						#reserveCalendarWrap > .body > table > * > tr > *{ box-sizing:border-box; border-top:1px solid #dddddd; }
+						#reserveCalendarWrap > .body > table > * > tr > *{ text-align:center; vertical-align:top; }
+						#reserveCalendarWrap > .body > table > thead{}
+						#reserveCalendarWrap > .body > table > thead > tr{}
+						#reserveCalendarWrap > .body > table > thead > tr > th{ vertical-align:middle; background:#fcfdff; height:44px; font-size:18px; color:#333333; }
+						#reserveCalendarWrap > .body > table > tbody{}
+						#reserveCalendarWrap > .body > table > tbody > tr{}
+						#reserveCalendarWrap > .body > table > tbody > tr > td{ }
+						#reserveCalendarWrap > .body > table > tbody > tr > td > .day{ padding-bottom:100%; }
+						#reserveCalendarWrap > .body > table > tbody > tr > td > .day > button{ width:100%; height:100%; }
+						#reserveCalendarWrap > .body > table > tbody > tr > td > .day > button{ position:absolute; top:0px; left:0px; }
+						#reserveCalendarWrap > .body > table > tbody > tr > td > .day > button{ font-size:20px; outline:none; }
+						#reserveCalendarWrap > .body > table > tbody > tr > td > .day > button.on{ background:#0068b7; }
+						#reserveCalendarWrap > .body > table > tbody > tr > td > .day > button.on > span{ line-height:40px; background:white; display:inline-block; width:40px; border-radius:100%; }
+						#reserveCalendarWrap > .body > table > tbody > tr > td.prev_month > .day > button{ color:#cccccc; background:#dddddd; }
+						#reserveCalendarWrap > .body > table > tbody > tr > td.disabled > .day > button{ color:#bbbbbb; background:#f9f9f9; }
+						/**/
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row{ display:none; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td{ text-align:left; border-top:none; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner{ box-sizing:border-box; border:10px solid #0068b7; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner{ }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .title{ padding-left:15px; background:#0068b7; color:white; font-size:20px; line-height:56px; letter-spacing:-0.05em; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list{ padding:20px 25px; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li{padding-top:14px; padding-bottom:14px;}
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li + li{ border-top:1px solid #e6e6e6; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li > a{ display:block; width:100%; font-size:18px; color:#a0a0a0; letter-spacing:-0.05em; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li.on > a{ color:#282828; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li > a > *{ display:inline-block; line-height:36px; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li > a > .label{ position:absolute; top:0px; right:0px; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li > a > .label{ background:#a0a0a0; color:white; padding:0 0.5em; }
+						#reserveCalendarWrap > .body > table > tbody > tr.time_row > td > .inner > .time_list > li.on > a > .label{ background:#0068b7; }
+					</style>
+					<script type="text/javascript">
+						$(function(){
+							$('#reserveCalendarWrap .day > button').click(function( e ){
+								
+								var $row = $(this).closest('tr');
+								var $time_row = $row.next('.time_row');
+								
+								if( $(this).hasClass('on') ){
+									//이미 활성화된 상태이면
+									$(this).removeClass('on');
+									$time_row.hide();
+								}else{
+									//활성화 되지 않았던 상태이면
+									$('#reserveCalendarWrap .day > button').removeClass('on');
+									$(this).addClass('on');
+									$row.siblings('.time_row').hide();
+									$time_row.show();
+								}
+								
+							});
+						});
+					</script>
+					<div id="reserveCalendarWrap">
+						<div class="head">
+							<div class="this_year_box">
+								<a href="#" class="btn_go btn_prev_year">PREV YEAR</a>
+								<a href="#" class="btn_go btn_prev_month">PREV MONTH</a>
+								<div class="year">2018년 12월</div>
+								<a href="#" class="btn_go btn_next_month">NEXT MONTH</a>
+								<a href="#" class="btn_go btn_next_year">NEXT YEAR</a>
+							</div>
+						</div>
+						<div class="body">
+							<table>
+								<thead>
+								<tr>
+									<th>
+										<div>MON</div>
+									</th>
+									<th>
+										<div>TUE</div>
+									</th>
+									<th>
+										<div>WED</div>
+									</th>
+									<th>
+										<div>THU</div>
+									</th>
+									<th>
+										<div>FRI</div>
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="prev_month">
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td class="disabled">
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+								</tr>
+								<tr class="time_row">
+									<td colspan="5">
+										<div class="inner">
+											<div class="title">캠퍼스 투어 예약</div>
+											<ul class="time_list">
+												<li>
+													<a href="javascript:void(0);">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<button type="button"><span>31</span></button>
+										</div>
+									</td>
+								</tr>
+								<tr class="time_row">
+									<td colspan="5">
+										<div class="inner">
+											<div class="title">캠퍼스 투어 예약</div>
+											<ul class="time_list">
+												<li>
+													<a href="javascript:void(0);">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+												<li class="on">
+													<a href="#">
+														<span>10:30 오전 - 12:00 오후</span>
+														<span class="label">예약불가</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- // section -->
+				<!-- section -->
+				<div class="section">
+					<br>
+					<div class="desc0">* 방문하고자 하는 날로부터 4주~2주 전 사이의 일정만 신청가능합니다.</div>
+					<div class="desc0">* 캠퍼스투어는 학기 중에만 진행되며 시험, 축제 등의 기간에는 진행되지 않습니다.</div>
+				</div>
+				<!-- // section -->
+			</div>
+		</div>
+	</div>
+	<!-- // body  -->
+	<!-- footer [2016-04-22] -->
+	<div id="footer">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/footer.html');
+		</script>
+	</div>
+	<!-- // footer [2016-04-22] -->
+</div>
+</body>
+</html>
+
+
+
+

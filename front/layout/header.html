@@ -1,0 +1,113 @@
+<link rel="stylesheet" type="text/css" href="/front/layout/header.css"/>
+<script type="text/javascript" src="/front/layout/header.js"></script>
+<div id="skip">
+	<a href="#main" tabindex="1">본문바로가기</a>
+</div>
+<!-- section -->
+<div class="section gnb_sec">
+	<button id="btnMobileGnb" type="button"></button>
+	<button id="btnOpenMobileGnb" type="button"></button>
+	<button id="btnMobileSearch" type="button"></button>
+	<button id="btnMobileUtil" type="button"></button>
+	<div class="inside">
+		<div class="inner">
+			<div id="topRightPos"></div>
+			<!--로고-->
+			<a id="homePageSubTitle" href="/index.do" tabindex="1">홍익대학교 미술대학</a>
+			<!--대메뉴-->
+			<div id="gnbWrapper">
+				<ul id="gnb">
+					<li class="hide_at_gnb hide_at_mobile_gnb hide_at_sitemap">
+						<a href="javascript:void(0);" data-mc="999"><span>ETC</span></a>
+					</li>
+				</ul>
+			</div>
+			<div id="globalWrap">
+				<ul class="utils">
+					<li class="on"><a href="javascript:void(0);" tabindex="1">KR</a></li>
+					<li><a href="javascript:void(0);" tabindex="1">EN</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // section -->
+<!-- section -->
+<div class="section gnb_clone_sec">
+	<div class="inside">
+		<ul id="gnbClone"></ul>
+		<!--<button id="gnbCloneCloseBtn" type="button">닫기 버튼 이미지 받은적 없음</button>-->
+	</div>
+</div>
+<!-- // section -->
+<!-- mobileGnbWrap [2017-11-17] -->
+<div id="mobileGnbWrap">
+	<div class="mlogo_area">
+		<div class="m_gnb_logo"></div>
+		<div class="utils">
+			<a href="javascript:void(0);">LOGIN</a>
+			<a href="javascript:void(0);">홈페이지</a>
+		</div>
+		<button id="btnMobileGnbClose"></button>
+	</div>
+	<div class="mgnb_layout">
+		<div>
+			<div class="scroll_box">
+				<ul id="gnbMobileTab">
+				</ul>
+			</div>
+		</div>
+		<div>
+			<div class="scroll_box">
+				<ul id="gnbMobile">
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mobileGnbDim"></div>
+<!-- // mobileGnbWrap [2017-11-17] -->
+<div id="mobileGnbType2Wrap">
+	<div class="logo_area">
+		<a href="javascript:void(0);" class="mlogo"></a>
+		<button id="btnMobileGnbType2Close"></button>
+	</div>
+	<div class="button_area">
+		<ul>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="http://gifpng.com/240x46?background-color=ffddd4&color=666666" alt=""/>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="http://gifpng.com/240x46?background-color=ffddd4&color=666666" alt=""/>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="gnb_area">
+		<ul id="mobileGnbType2">
+		</ul>
+	</div>
+</div>
+<div id="mobileGnbType2Dim"></div>
+<!-- mobileUtilWrap [2019-01-30] -->
+<div id="mobileUtilWrap">
+	<div class="mlogo_area">
+		<div class="m_gnb_logo"></div>
+		<a href="javascript:void(0);" id="language_Btn"></a>
+		<button id="btnMobileUtilClose"></button>
+	</div>
+	<div class="body">
+		<form action="/front/html/google_search.html" class="search_form">
+			<input type="search" name="q"/>
+			<button type="submit" class="search_btn"></button>
+		</form>
+		<div class="login_btn_box">
+			<a href="javascript:void(0);" class="btn">로그아웃</a>
+		</div>
+	</div>
+</div>
+<div id="mobileUtilDim"></div>
+<!-- // mobileUtilWrap [2019-01-30] -->

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo1</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="chart-area"></div>
+<!--chart-->
+<script type="text/javascript" src="/front/libs/ToastUIChart/code-snippet.js"></script>
+<script type="text/javascript" src="/front/libs/ToastUIChart/tui-component-animation.min.js"></script>
+<script type="text/javascript" src="/front/libs/ToastUIChart/raphael-min.js"></script>
+<link rel="stylesheet" type="text/css" href="/front/libs/ToastUIChart/chart.css"/>
+<script type="text/javascript" src="/front/libs/ToastUIChart/chart.js"></script>
+<style type="text/css">
+	.tui-chart-chartExportMenu-area{ display:none; }
+</style>
+<script>
+	//https://nhnent.github.io/tui.chart/latest/index.html
+	//https://github.com/nhnent/tui.chart/wiki/tutorial
+	
+	var theme = {
+		series: {
+			colors: ['#ffba1c', '#001562']
+		}
+	};
+	tui.chart.registerTheme('newTheme', theme);
+	
+	var container=document.getElementById('chart-area'),
+		data={
+			categories:["섬김역량", "소통역량", "창의역량", "글로벌역량", "실무역량"],
+			series:[
+				{
+					name:'전체평균',
+					color:'#0f0',
+					data:[72,75,79,82,85]
+				},
+				{
+					name:'내점수',
+					data:[81,88,70,72,92]
+				}
+			
+			]
+		},
+		options={
+			theme: 'newTheme',
+			chart:{
+				title:null,
+				width:700,
+				height:600
+			},
+			xAxis: {
+				min: 0,
+				max: 100
+			},
+			yAxis: {
+				min: 0,
+				max: 100
+			},
+			series:{
+				showDot:true,
+				showArea:true
+			},
+			legend:{
+				align:'top',
+				visible:true
+			},
+			chartExportMenu:{
+				visible:false  // default is true.
+			},
+			plot:{
+				type:'circle'
+			}
+		};
+	
+	tui.chart.radialChart(container, data, options);
+</script>
+</body>
+</html>

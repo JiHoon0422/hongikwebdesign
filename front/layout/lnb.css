@@ -1,0 +1,33 @@
+#lnb{ display:table-cell; width:210px; vertical-align:top; }
+#lnb{ display:none; }
+.page.full #lnb{ display:none; }
+#lnb{ background:white; padding-top:50px; }
+#lnb .hide_at_lnb{ display:none; }
+#lnb > ul{ width:100%; }
+#lnb > ul > li{ display:none; }
+#lnb > ul > li.on{ display:block; }
+#lnb > ul > li > a{ display:table; table-layout:fixed; border-collapse:collapse; width:100%; }
+#lnb > ul > li > a > span{ display:table-cell; vertical-align:middle; padding:0 20px; }
+#lnb > ul > li > a > span{ background:#0c2e87; height:82px; }
+#lnb > ul > li > a > span{ font-weight:bold; font-size:24px; color:white; letter-spacing:-0.05em; }
+#lnb > ul > li > ul{ }
+#lnb > ul > li > ul > li{ border-bottom:1px solid #dddddd; }
+#lnb > ul > li > ul > li > a{ display:block; padding:10px 0; padding-left:17px; }
+#lnb > ul > li > ul > li > a{ font-size:18px; color:#333333; }
+#lnb > ul > li > ul > li.has_child > a:after{ position:absolute; top:50%; margin-top:-3px; right:10px; content:''; display:inline-block; }
+#lnb > ul > li > ul > li.has_child > a:after{ width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-top:6px solid #333333; }
+#lnb > ul > li > ul > li.on > a{ color:#0c2e87; }
+#lnb > ul > li > ul > li.has_child.on > a:after{ border-top:none; border-bottom:6px solid white; }
+#lnb > ul > li > ul > li > ul{ display:none; padding:20px 25px; }
+#lnb > ul > li > ul > li > ul{ border-top:2px solid #0c2e87; }
+#lnb > ul > li > ul > li.on > ul{ display:block; background:#f3f3f3; }
+#lnb > ul > li > ul > li > ul > li{ font-size:0; padding-left:10px; }
+#lnb > ul > li > ul > li > ul > li + li{ margin-top:12px; }
+#lnb > ul > li > ul > li > ul > li.on:before{ position:absolute; left:0px; top:50%; margin-top:-1px; display:block; content:''; width:3px; height:3px; background:#333333; }
+#lnb > ul > li > ul > li > ul > li > a{ font-size:16px; color:#666666; }
+#lnb > ul > li > ul > li > ul > li.on > a{ color:#333333; font-weight:bold; }
+/* 1023이하 - 태블릿 세로 이하▼ 화면[768 PSD]*/
+@media all and (max-width:1023px){
+	#lnb{ display:none; }
+}
+

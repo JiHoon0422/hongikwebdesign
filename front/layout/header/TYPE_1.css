@@ -1,0 +1,102 @@
+/**/
+#header{ height:106px; }
+#header .gnb_sec{ margin-top:22px; }
+#header .gnb_sec{ padding-left:18px; padding-right:18px; }
+#header .gnb_sec{ max-width:1920px; margin-left:auto; margin-right:auto; }
+/**/
+#header .gnb_sec > .inside{ background:rgba(0, 0, 0, 0.8); }
+/*#header .gnb_sec > .inside{ border-bottom:1px solid white; }*/
+#header .gnb_sec > .inside{ max-width:100%; }
+#header .gnb_sec > .inside > .inner{ max-width:1200px; height:82px; margin-left:auto; margin-right:auto; }
+/* JM_CSS */
+@media all and (min-width:1022px) and (max-width:1440px){
+    #header .gnb_sec > .inside > .inner {height:54px;}
+    #header #gnb > li > a {font-size:14px;line-height: 54px;}
+}
+/* 1024이상 ~ 1279이하 작은 DESKTOP*/
+@media all and (min-width:1024px) and (max-width:1279px){
+	#header .gnb_sec{ padding-left:0; padding-right:0; }
+	#header .gnb_sec > .inside{ padding-left:18px; padding-right:18px; }
+}
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+	#header{ height:58px; }
+	#header .gnb_sec{ margin-top:9px; }
+	#header .gnb_sec{ padding-left:9px; padding-right:9px; }
+	#header .gnb_sec > .inside > .inner{ height:48px; }
+}
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	#header{ height:78px; }
+	#header .gnb_sec{ margin-top:0; }
+	#header .gnb_sec{ padding-left:0px; padding-right:0px; }
+	#header .gnb_sec > .inside{ background:none; border-bottom:none; }
+	#header .gnb_sec > .inside > .inner{ height:78px; }
+}
+#header #gnbWrapper{ z-index:1; position:absolute; }
+#header #gnbWrapper{ top:0px; left:330px; }
+#header #gnb{ font-size:0; }
+#header #gnb > li{ display:inline-block; }
+#header #gnb > li + li{ margin-left:124px; }
+#header #gnb > li > a{ font-size:18px; color:white; }
+#header #gnb > li > a{ line-height:84px; }
+#header #gnb > li.hover > a,
+#header #gnb > li:hover > a{ color:#ff009b; }
+#header #gnb > li > ul{ display:none; }
+/* JM_CSS */
+@media all and (min-width:1022px) and (max-width:1440px){
+    #header #gnb > li > a {font-size:14px;line-height: 54px;}
+    #header #gnb > li + li {margin-left:78px;}
+    #header .gnb_sec > .inside{ padding-left:0px; padding-right:0px; }
+}
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+	#header #gnb > li + li{ margin-left:70px; }
+	#header #gnb > li > a{ font-size:11px; line-height:48px; }
+}
+/**/
+#header .gnb_clone_sec{ overflow:hidden; }
+#header .gnb_clone_sec{ padding-left:18px; padding-right:18px; }
+#header .gnb_clone_sec{ max-width:1920px; margin-left:auto; margin-right:auto; }
+#header .gnb_clone_sec > .inside{ background:rgba(0, 0, 0, 0.8); max-width:none; }
+#header .gnb_clone_sec > .inside{ border-top:1px solid white; box-sizing:border-box; }
+#header .gnb_clone_sec #gnbClone{ font-size:0; max-width:1200px; margin-left:auto; margin-right:auto; }
+#header .gnb_clone_sec #gnbClone{ padding-left:330px; }
+#header .gnb_clone_sec #gnbClone > li{ display:none; }
+#header .gnb_clone_sec #gnbClone > li{ padding-top:60px; padding-bottom:60px; }
+#header .gnb_clone_sec #gnbClone > li.hover,
+#header .gnb_clone_sec #gnbClone > li:hover{ display:block; }
+#header .gnb_clone_sec #gnbClone > li > a{ font-size:18px; color:white; }
+#header .gnb_clone_sec #gnbClone > li > a{ position:absolute; top:60px; left:-330px; }
+#header .gnb_clone_sec #gnbClone > li > a{ width:330px; }
+#header .gnb_clone_sec #gnbClone > li > ul{ font-size:0; }
+#header .gnb_clone_sec #gnbClone > li > ul{ width:435px; display:inline-block; vertical-align:top; }
+#header .gnb_clone_sec #gnbClone > li > ul > li{ width:100%; }
+#header .gnb_clone_sec #gnbClone > li > ul > li + li{ margin-top:20px; }
+#header .gnb_clone_sec #gnbClone > li > ul > li > ul{ display:none; }
+#header .gnb_clone_sec #gnbClone > li > ul > li > a{ font-size:18px; color:white; }
+#header .gnb_clone_sec #gnbClone > li > ul > li > a:hover{ color:#ff009b; }
+/* 1024이상 ~ 1279이하 작은 DESKTOP*/
+@media all and (min-width:1024px) and (max-width:1279px){
+	#header .gnb_clone_sec{ padding-left:0px; padding-right:0px; }
+	/*#header .gnb_sec > .inside{ padding-left:18px; padding-right:18px; }*/
+}
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+	#header .gnb_clone_sec{ padding-left:9px; padding-right:9px; }
+	#header .gnb_clone_sec > .inside{ padding-left:20px; }
+	#header .gnb_clone_sec #gnbClone{ padding-left:307px; }
+	#header .gnb_clone_sec #gnbClone > li{ padding-top:30px; padding-bottom:30px; }
+	#header .gnb_clone_sec #gnbClone > li > a{ font-size:12px; width:307px; top:30px; left:-307px; }
+	#header .gnb_clone_sec #gnbClone > li > ul{ width:138px; }
+	#header .gnb_clone_sec #gnbClone > li > ul > li + li{ margin-top:10px; }
+	#header .gnb_clone_sec #gnbClone > li > ul > li > a{ font-size:12px; }
+}
+/* JM_CSS */
+@media all and (min-width:1022px) and (max-width:1440px){
+    #header .gnb_clone_sec #gnbClone {max-width:804px;}
+    #header .gnb_clone_sec #gnbClone > li > ul {width:235px;}
+} 
+
+/*#gnbCloneCloseBtn{ width:100px; height:100px; background:red; }*/
+/*#gnbCloneCloseBtn{ position:absolute; top:10px; right:10px; z-index:5; }*/

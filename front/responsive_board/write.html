@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- subpage_head [2016-04-12] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/reset.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/common.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/styles/subpage.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/underscore-min.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+	<script type="text/javascript" src="/front/scripts/publisher.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/default.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/iframe_auto_fit.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/subpage.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/responsive_board/dist/responsive_board.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/responsive_board/dist/responsive_board.js?ver=20171013"></script>
+	<!-- // subpage_head [2016-04-12] -->
+	<title>홈페이지</title>
+	<script type="text/javascript" src="/js/common.js?ver=20171013"></script>
+	<script type="text/javascript" src="/js/www.js?ver=20171013"></script>
+</head>
+<body>
+<div class="page">
+	<!-- header [2016-04-22] -->
+	<div id="header">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/header.html');
+		</script>
+	</div>
+	<!-- // header [2016-04-22] -->
+	<!-- body -->
+	<div id="body">
+		<div id="main" class="main">
+			<div id="contents">
+				<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.css?ver=20171013"/>
+				<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.date.css?ver=20171013"/>
+				<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.time.css?ver=20171013"/>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/legacy.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/picker.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/picker.date.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/picker.time.js?ver=20171013"></script>
+				<script type="text/javascript" src="/front/libs/pickadate.js-3.5.6/lib/translations/ko_KR.js?ver=20171013"></script>
+				<!-- section -->
+				<div class="section">
+					<div class="rbbs_write_sec">
+						<ul>
+							<li>
+								<div class="label">아이디</div>
+								<div class="form top_grp">
+									<input type="text" class="inpui"/>
+									<button type="button" class="btnui btnui_666"><span>중복확인</span></button>
+								</div>
+							</li>
+							<li>
+								<div class="label">전화</div>
+								<div class="form">
+									<select class="selui" data-code="180906110911">
+										<option value="">010</option>
+										<option value=""></option>
+									</select>
+									<span>-</span>
+									<input type="text" class="inpui txtc" style="width:50px;"/>
+									<span>-</span>
+									<input type="text" class="inpui txtc" style="width:50px;"/>
+								</div>
+							</li>
+							<li>
+								<div class="label">구분</div>
+								<div class="form">
+									<select class="selui" data-code="180906110944">
+										<option value="">전체</option>
+										<option value=""></option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="label">노출기간</div>
+								<div class="form">
+									<input type="text" class="inpui txtc datepicker" style="width:100px;"/>
+									<select class="selui" data-code="180906111102">
+										<option value="">0시</option>
+										<option value=""></option>
+									</select>
+									<span>~</span>
+									<input type="text" class="inpui txtc datepicker" style="width:100px;"/>
+									<select class="selui" data-code="180906111103">
+										<option value="">0시</option>
+										<option value=""></option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="label">라벨</div>
+								<div class="form">
+									<input type="text" class="inpui block"/>
+								</div>
+								<div class="label">라벨</div>
+								<div class="form">
+									<input type="text" class="inpui block"/>
+								</div>
+								<div class="label">라벨</div>
+								<div class="form">
+									<input type="text" class="inpui block"/>
+								</div>
+							</li>
+							<li>
+								<div class="label">구분</div>
+								<div class="form">
+									<div>옴마나</div>
+								</div>
+							</li>
+							<li>
+								<div class="label">제목</div>
+								<div class="form">
+									<input type="text" class="inpui block"/>
+								</div>
+							</li>
+							<li>
+								<div id="sampleEditor">
+									<div class="noitem" style="height:450px;"><span>에디터</span></div>
+								</div>
+							</li>
+							<li>
+								<div class="label">첨부파일</div>
+								<div class="form">
+									<div class="attach_files">
+										<div class="file_box">
+											<div class="name">
+												<a class="file_ext docx"><span>Competently_enhance_transparent_communities_rather_than_ethical_servicesCompetently_enhance_transparent_communities_rather_than_ethical_services</span></a>
+												<div class="trash">
+													<input id="attachfileChk1" type="checkbox" class="chk"/>
+													<label for="attachfileChk1"></label>
+												</div>
+											</div>
+											<div class="rbbs_file"><input type="file"/></div>
+										</div>
+										<div class="file_box">
+											<!--
+											<div class="name">
+												<div class="trash">
+													<input id="attachfileChk2" type="checkbox" class="chk"/>
+													<label for="attachfileChk2"></label>
+												</div>
+												<a class="file_ext pptx"><span>첨부파일.pptx</span></a>
+											</div>
+											-->
+											<div class="rbbs_file"><input type="file"/></div>
+										</div>
+										<div class="file_box">
+											<div class="name">
+												<a class="file_ext xlsx"><span>첨부파일.xlsx</span></a>
+												<div class="trash">
+													<input id="attachfileChk3" type="checkbox" class="chk"/>
+													<label for="attachfileChk3"></label>
+												</div>
+											</div>
+											<div class="rbbs_file"><input type="file"/></div>
+										</div>
+										<div class="file_box">
+											<div class="name">
+												<a class="file_ext pdf"><span>첨부파일.pdf</span></a>
+												<div class="trash">
+													<input id="attachfileChk4" type="checkbox" class="chk"/>
+													<label for="attachfileChk4"></label>
+												</div>
+											</div>
+											<div class="rbbs_file"><input type="file"/></div>
+										</div>
+										<div class="file_box">
+											<div class="name">
+												<a class="file_ext hwp"><span>첨부파일.hwp</span></a>
+												<div class="trash">
+													<input id="attachfileChk5" type="checkbox" class="chk"/>
+													<label for="attachfileChk5"></label>
+												</div>
+											</div>
+											<div class="rbbs_file"><input type="file"/></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="label">체크박스</div>
+								<div class="form">
+									<div class="rbbs_chk"><input id="chkA" type="checkbox"/><label for="chkA">체크항목</label></div>
+									<div class="rbbs_chk"><input id="chkB" type="checkbox"/><label for="chkB">체크항목</label></div>
+									<div class="rbbs_chk"><input id="chkC" type="checkbox"/><label for="chkC">체크항목</label></div>
+									<div class="rbbs_chk"><input id="chkD" type="checkbox"/><label for="chkD">체크항목</label></div>
+									<div class="rbbs_chk"><input id="chkE" type="checkbox"/><label for="chkE">체크항목</label></div>
+								</div>
+							</li>
+							<li>
+								<div class="label">라디오 버튼</div>
+								<div class="form">
+									<div class="rbbs_rdo"><input id="rdoA" type="radio" name="TEST"/><label for="rdoA">라디오항목</label></div>
+									<div class="rbbs_rdo"><input id="rdoB" type="radio" name="TEST"/><label for="rdoB">라디오항목</label></div>
+									<div class="rbbs_rdo"><input id="rdoC" type="radio" name="TEST"/><label for="rdoC">라디오항목</label></div>
+									<div class="rbbs_rdo"><input id="rdoD" type="radio" name="TEST"/><label for="rdoD">라디오항목</label></div>
+									<div class="rbbs_rdo"><input id="rdoE" type="radio" name="TEST"/><label for="rdoE">라디오항목</label></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<br>
+					<div class="txtr">
+						<a href="#" class="btnui"><span>확인</span></a>
+						<a href="#" class="btnui btnui_0"><span>확인</span></a>
+						<a href="#" class="btnui btnui_1"><span>확인</span></a>
+						<a href="#" class="btnui btnui_2"><span>확인</span></a>
+						<a href="#" class="btnui btnui_3"><span>확인</span></a>
+						<a href="#" class="btnui btnui_333"><span>확인</span></a>
+						<a href="#" class="btnui btnui_666"><span>확인</span></a>
+						<a href="#" class="btnui btnui_999"><span>확인</span></a>
+					</div>
+				</div>
+				<!-- // section -->
+			</div>
+		</div>
+	</div>
+	<!-- // body  -->
+	<!-- footer [2016-04-22] -->
+	<div id="footer">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/footer.html');
+		</script>
+	</div>
+	<!-- // footer [2016-04-22] -->
+</div>
+</body>
+</html>

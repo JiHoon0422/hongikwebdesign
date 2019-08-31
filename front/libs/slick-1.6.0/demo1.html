@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo0</title>
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css"/>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js"></script>
+	<style type="text/css">
+		body{ background:#555; }
+	</style>
+	
+</head>
+<body>
+
+<!-- slick_slide -->
+<link rel="stylesheet" type="text/css" href="/front/libs/slick-1.6.0/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/front/libs/slick-1.6.0/slick/slick_sogood.css"/>
+<script type="text/javascript" src="/front/libs/slick-1.6.0/slick/slick.js"></script>
+
+<div class="main_slide">
+	<div>
+		<img src="http://gifpng.com/550x499" alt=""/>
+	</div>
+	<div>
+		<img src="http://gifpng.com/550x499/?background-color=f5f5f5&color=333" alt=""/>
+	</div>
+</div>
+
+<div class="main_slide_dots_box"></div>
+<div class="main_slide_arrow_box"></div>
+<button id="btnPlay">PLAY</button>
+<button id="btnPause">PAUSE</button>
+
+<style type="text/css">
+	.main_slide{ width:550px; margin: 0 auto; }
+</style>
+<script type="text/javascript">
+	$(function(){
+		
+		$('.main_slide').on('init', function(event, slick){
+			console.log('init');
+		});
+		
+		$('.main_slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+			console.log('beforeChange');
+			var len = slick.slideCount;
+			console.log("currentSlide : " + currentSlide, "nextSlide : " + nextSlide, "len : " + (len));
+			if(currentSlide==len-1 && nextSlide==0){
+				console.log("next");
+			}else if(currentSlide==0 && nextSlide==len-1){
+				console.log("prev");
+			}else{
+				if(currentSlide<nextSlide){
+					console.log("next");
+				}else if(currentSlide>nextSlide){
+					console.log("prev");
+				}
+				
+			}
+		});
+		
+		$('.main_slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+			console.log('afterChange');
+		});
+		
+		$('#btnPlay').click(function(e) {
+			$('.main_slide').slick('slickPlay');
+		});
+		
+		$('#btnPause').click(function(e) {
+			$('.main_slide').slick('slickPause');
+		});
+		
+		//http://kenwheeler.github.io/slick/
+		$('.main_slide').slick({
+			//centerMode:true,
+			swipe:false,
+			fade:true,
+			dots:true,
+			arrows:true,
+			dotsClass:"main_slide_dots",
+			appendDots:".main_slide_dots_box",
+			appendArrows:".main_slide_arrow_box",
+			pauseOnDotsHover:true,
+			autoplay: true,
+			autoplaySpeed: 1000,
+		});
+		
+		
+	});
+</script>
+<!-- // slick_slide -->
+
+
+</body>
+</html>

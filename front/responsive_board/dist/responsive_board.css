@@ -1,0 +1,368 @@
+/**/
+.rbbs_search_sec{ text-align:center; font-size:0; margin-bottom:20px; }
+.rbbs_search_sec{ box-sizing:border-box; border:1px solid #dddddd; background:#f7f7f7; padding:20px; }
+.rbbs_search_sec + .rbbs_search_sec{ margin-top:5px; }
+.rbbs_search_sec > *{ margin-bottom:3px; font-size:14px; color:#666666; vertical-align:top; text-align:center; }
+.rbbs_search_sec > * + *{ margin-left:3px; }
+.rbbs_search_sec > .btn_search{ background:#7b858d; color:white; font-weight:bold; font-size:14px; letter-spacing:-0.1em; width:60px; height:34px; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	/*.rbbs_search_sec > * + *{ margin-left:0; }*/
+	/*.rbbs_search_sec > .btn_search{ width:100%; }*/
+}
+/**/
+.rbbs_sel0{ height:34px; box-sizing:border-box; border:1px solid #bbbbbb; color:#666666; font-size:14px; }
+.rbbs_input0{ text-align:left; height:34px; box-sizing:border-box; border:1px solid #bbbbbb; padding:0 5px; color:#666666; }
+.rbbs_file > input[type=file]{ font-size:14px; color:#666666; }
+.rbbs_file + .rbbs_file{ margin-top:5px; }
+.rbbs_chk{ display:inline-block; }
+.rbbs_chk > input[type=checkbox]{ margin-right:5px; font-size:14px; color:#666666; }
+.rbbs_chk + .rbbs_chk{ margin-left:10px; }
+.rbbs_rdo{ display:inline-block; }
+.rbbs_rdo > input[type=radio]{ margin-right:5px; font-size:14px; color:#666666; }
+.rbbs_rdo + .rbbs_rdo{ margin-left:10px; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	/*.rbbs_sel0{ width:100%; }*/
+	/*.rbbs_input0{ width:100%; }*/
+}
+/**/
+.rbbs_cnt_sec{ text-align:right; margin:10px 0; color:#959595; font-size:14px; letter-spacing:-0.05em; }
+.rbbs_cnt_sec:after{ content:""; display:block; clear:both; }
+.rbbs_cnt_sec > div{ display:inline-block; }
+.rbbs_cnt_sec strong{ color:#333333; }
+.rbbs_cnt_sec > .cnt{ float:left; }
+.rbbs_cnt_sec > .search_info > strong + span{ margin-left:5px; padding-left:5px; }
+.rbbs_cnt_sec > .search_info > strong + span:before{ background:#bababa; width:1px; height:10px; position:absolute; top:50%; margin-top:-5px; left:0px; content:''; display:inline-block; }
+/**/
+.rbbs_list_normal_sec{ }
+.rbbs_list_normal_sec > ul{ border-top:2px solid #545c73; }
+/**/
+.rbbs_list_normal_sec > ul > li{ padding:20px; padding-right:40px; min-height:50px; border-bottom:1px solid #dddddd; }
+.rbbs_list_normal_sec > ul > li > *{ vertical-align:top; }
+.rbbs_list_normal_sec > ul > li > a{ display:block; padding-right:10px; }
+.rbbs_list_normal_sec > ul > li > .btn_show_attach_file{ position:absolute; top:50%; margin-top:-25px; right:0px; }
+.rbbs_list_normal_sec > ul > li > .btn_show_attach_file{ background:url(/front/responsive_board/dist/res/btn_normal_bbs_download.png) no-repeat; width:32px; height:32px; }
+/**/
+.rbbs_list_normal_sec > ul > li > a > .mark_line{ font-size:0; margin-bottom:10px; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark{ border-radius:3px; line-height:20px; height:22px; padding:0 11px; display:inline-block; font-size:12px; font-weight:bold; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark{ box-sizing:border-box; box-sizing:border-box; border:1px solid #333333; color:#333333; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark + .mark{ margin-left:4px; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type2{ border-color:#3db0d8; background-color:#3db0d8; color:white; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type3{ border-color:#f89f4f; background-color:#f89f4f; color:white; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type4{ border-color:#4475cb; background-color:#4475cb; color:white; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type5{ border-color:#d25151; background-color:#d25151; color:white; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type6{ border-color:#c3c8cc; background-color:#c3c8cc; color:white; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type7{ border-color:#50b1d4; background-color:#50b1d4; color:white; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type8{ border-color:#52b9a6; background-color:#52b9a6; color:white; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type9{ border-color:#d01e1e; background-color:white; color:#d01e1e; }
+.rbbs_list_normal_sec > ul > li > a > .mark_line .mark.type10{ border-color:#cdcdcd; background-color:white; color:#cdcdcd; }
+/**/
+.rbbs_list_normal_sec > ul > li > a > .title_line{ margin-bottom:10px; font-size:0; }
+/*.rbbs_list_normal_sec > ul > li > a > .title_line{ outline:1px solid blue; box-shadow:0px 0px 10px blue; }*/
+.rbbs_list_normal_sec > ul > li > a > .title_line{ font-size:14px; color:#333333; letter-spacing:-0.05em; font-weight:bold; }
+.rbbs_list_normal_sec > ul > li > a > .title_line{ display:inline-table; table-layout:fixed; border-collapse:collapse; width:100%; }
+.rbbs_list_normal_sec > ul > li > a > .title_line > div{ display:table-cell; vertical-align:middle; }
+/**/
+.rbbs_list_normal_sec > ul > li > a > .title_line > .flag{ font-size:0; content:''; background-repeat:no-repeat; background-position:left; text-align:center; width:20px; }
+.rbbs_list_normal_sec > ul > li > a > .title_line > .flag.private{ background-image:url(/front/responsive_board/dist/res/ic_private.png); }
+.rbbs_list_normal_sec > ul > li > a > .title_line > .flag.top{ background-image:url(/front/responsive_board/dist/res/ic_top.png); }
+.rbbs_list_normal_sec > ul > li > a > .title_line > .flag.reply{ background:url(/front/responsive_board/dist/res/ico_normal_bbs_reply.png) no-repeat center; width:20px; height:18px; }
+/**/
+.rbbs_list_normal_sec > ul > li > a > .title_line > .title{ }
+.rbbs_list_normal_sec > ul > li > a > .title_line > .title > .text{ padding-right:20px; display:inline-block; max-width:100%; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+.rbbs_list_normal_sec > ul > li > a > .title_line > .title > .text .ic_new{ display:inline-block; width:18px; height:18px; font-size:0; background-repeat:no-repeat; background-image:url(/front/responsive_board/dist/res/ic_new.png); background-position:center; }
+.rbbs_list_normal_sec > ul > li > a > .title_line > .title > .text .ic_new{ position:absolute; top:0px; right:0px; }
+/**/
+.rbbs_list_normal_sec > ul > li > a > .info_line{ font-size:0; }
+.rbbs_list_normal_sec > ul > li > a > .info_line > div{ vertical-align:middle; display:inline-block; font-size:12px; color:#999999; }
+.rbbs_list_normal_sec > ul > li > a > .info_line > div + div{ margin-left:7px; padding-left:10px; }
+.rbbs_list_normal_sec > ul > li > a > .info_line > div + div:before{ background:#666666; width:1px; height:10px; position:absolute; top:50%; margin-top:-5px; left:0px; content:''; display:inline-block; }
+/**/
+.rbbs_list_normal_sec > ul > li > .button_line{ margin-top:10px; }
+/**/
+.rbbs_list_normal_sec > ul > li.no_list{ background:#f9fafb; text-align:center; line-height:220px; font-size:14px; }
+/**/
+.rbbs_list_normal_sec > ul > li > .attach_file_layer{ box-sizing:border-box; border:1px solid #758787; background:white; }
+.rbbs_list_normal_sec > ul > li > .attach_file_layer{ box-shadow:1px 1px 1px 1px #999999; }
+.rbbs_list_normal_sec > ul > li > .attach_file_layer{ width:250px; z-index:1; position:absolute; top:17px; right:40px; }
+.rbbs_list_normal_sec > ul > li > .attach_file_layer{ display:none; }
+.rbbs_list_normal_sec > ul > li > .attach_file_layer > .head_area{ padding:8px; border-bottom:1px solid #dddddd; line-height:30px; font-weight:bold; font-size:14px; color:#333333; }
+.rbbs_list_normal_sec > ul > li > .attach_file_layer > .head_area .btn_close_layer{ position:absolute; top:50%; margin-top:-15px; right:0px; }
+.rbbs_list_normal_sec > ul > li > .attach_file_layer > .head_area .btn_close_layer{ background:url(/front/responsive_board/dist/res/btn_normal_bbs_close_download.png) no-repeat center; width:30px; height:30px; }
+.rbbs_list_normal_sec > ul > li > .attach_file_layer > .body_area{ background:#f9fafb; padding:8px; height:100px; overflow-y:scroll; -webkit-overflow-scrolling:touch; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_list_normal_sec > ul > li{ padding-left:5px; padding-right:50px; }
+	.rbbs_list_normal_sec > ul > li > .btn_show_attach_file{ width:50px; height:50px; }
+	.rbbs_list_normal_sec > ul > li > .attach_file_layer{ right:60px; }
+}
+/**/
+.rbbs_paging{ margin:20px 0; text-align:center; font-size:0; }
+/******************************************
+	write
+*******************************************/
+/**/
+.rbbs_write_sec{ }
+.rbbs_write_sec > ul{ border-top:2px solid #545c73; }
+.rbbs_write_sec > ul > li{ display:table; table-layout:fixed; border-collapse:collapse; width:100%; }
+.rbbs_write_sec > ul > li{ border-bottom:1px solid #dddddd; font-size:14px; color:#666666; }
+.rbbs_write_sec > ul > li > div{ display:table-cell; height:50px; vertical-align:middle; padding-top:8px; padding-bottom:8px; }
+.rbbs_write_sec > ul > li > .label{ width:15%; text-align:center; font-weight:bold; font-size:14px; color:#666666; }
+.rbbs_write_sec > ul > li > .form{ padding-right:8px; }
+.rbbs_write_sec > ul > li > .form > *{ vertical-align:middle; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_write_sec > ul > li{ display:block; }
+	.rbbs_write_sec > ul > li > div{ display:block; height:auto; }
+	.rbbs_write_sec > ul > li > .label{ width:auto; text-align:left; }
+	.rbbs_write_sec > ul > li > .form{ padding-top:0; margin-bottom:5px; }
+}
+/**/
+.attach_files{ margin:20px 0; }
+.attach_files > .file_box{ }
+.attach_files > .file_box + .file_box{ margin-top:15px; padding-top:15px; border-top:1px dashed #dddddd; }
+.attach_files > .file_box .trash{ position:absolute; top:50%; margin-top:-8px; right:0px; }
+.attach_files > .file_box .trash .chk{ opacity:0; position:absolute; top:0px; left:-20px; }
+.attach_files > .file_box .trash .chk + label{ display:inline-block; background:url(/front/responsive_board/dist/res/btn_write_bbs_del_file.png) no-repeat; width:22px; height:18px; }
+.attach_files > .file_box .trash .chk:checked + label{ background-image:url(/front/responsive_board/dist/res/btn_write_bbs_del_file_checked.png); }
+.attach_files > .file_box .name{ padding-right:30px; display:inline-block; max-width:100%; }
+.attach_files > .file_box .rbbs_file{ margin-top:10px; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.attach_files > .file_box .trash{ top:0; margin-top:0; }
+	.attach_files > .file_box .trash .chk + label{ padding:0 12px; }
+	.attach_files > .file_box .trash .chk + label > i{ line-height:32px; }
+	.attach_files > .file_box .name{ padding-right:40px; }
+}
+/******************************************
+	read
+*******************************************/
+/**/
+.rbbs_read_sec{ margin-top:50px; }
+.rbbs_read_sec > ul{ border-top:2px solid #545c73; }
+/**/
+.rbbs_read_sec > ul > li{ padding:20px; min-height:50px; border-bottom:1px solid #dddddd; }
+.rbbs_read_sec > ul > li > *{ vertical-align:top; }
+.rbbs_read_sec > ul > li > a{ display:block; }
+/**/
+.rbbs_read_sec > ul > li > a > .title_line{ margin-bottom:10px; font-size:0; }
+.rbbs_read_sec > ul > li > a > .title_line{ font-size:14px; color:#333333; letter-spacing:-0.05em; font-weight:bold; }
+.rbbs_read_sec > ul > li > a > .title_line{ display:table; table-layout:fixed; border-collapse:collapse; width:100%; }
+.rbbs_read_sec > ul > li > a > .title_line > div{ display:table-cell; vertical-align:middle; }
+/**/
+.rbbs_read_sec > ul > li > a > .title_line > .flag{ font-size:0; content:''; background-repeat:no-repeat; background-position:left; text-align:center; width:20px; }
+.rbbs_read_sec > ul > li > a > .title_line > .flag.private{ background-image:url(/front/responsive_board/dist/res/ic_private.png); }
+.rbbs_read_sec > ul > li > a > .title_line > .flag.top{ background-image:url(/front/responsive_board/dist/res/ic_top.png); }
+.rbbs_read_sec > ul > li > a > .title_line > .flag.new{ background-image:url(/front/responsive_board/dist/res/ic_new.png); background-position:center; }
+.rbbs_read_sec > ul > li > a > .title_line > .flag.Q{ background-image:url(/front/responsive_board/dist/res/ic_Q.png); width:35px; height:20px; }
+.rbbs_read_sec > ul > li > a > .title_line > .flag.A{ background-image:url(/front/responsive_board/dist/res/ic_A.png); width:35px; height:20px; }
+/**/
+.rbbs_read_sec > ul > li > a > .title_line > .state{ font-size:12px; width:46px; }
+.rbbs_read_sec > ul > li > a > .title_line > .state > span{ display:inline-block; min-width:40px; line-height:20px; text-align:center; }
+.rbbs_read_sec > ul > li > a > .title_line > .state > span{ background:#c3c8cc; color:white; box-sizing:border-box; border:1px solid #c3c8cc; }
+.rbbs_read_sec > ul > li > a > .title_line > .state.type1 > span{ background:#50b1d4; color:white; border-color:#50b1d4; }
+.rbbs_read_sec > ul > li > a > .title_line > .state.type2 > span{ background:#52b9a6; color:white; border-color:#52b9a6; }
+.rbbs_read_sec > ul > li > a > .title_line > .state.type3 > span{ background:white; color:#d01e1e; border-color:#d01e1e; }
+.rbbs_read_sec > ul > li > a > .title_line > .state.type4 > span{ background:white; color:#cdcdcd; border-color:#cdcdcd; }
+/**/
+.rbbs_read_sec > ul > li > a > .info_line{ margin-top:20px; font-size:0; text-align:right; }
+.rbbs_read_sec > ul > li > a > .info_line > div{ vertical-align:middle; display:inline-block; font-size:12px; color:#999999; }
+.rbbs_read_sec > ul > li > a > .info_line > div + div{ margin-left:7px; padding-left:10px; }
+.rbbs_read_sec > ul > li > a > .info_line > div + div:before{ background:#666666; width:1px; height:10px; position:absolute; top:50%; margin-top:-5px; left:0px; content:''; display:inline-block; }
+/**/
+.rbbs_read_sec .substance{ width:100%; }
+.rbbs_read_sec .substance p{ color:inherit; font-size:inherit; letter-spacing:inherit; }
+.rbbs_read_sec .substance *{ max-width:100%; word-break:break-all; }
+/**/
+.rbbs_read_sec li.label_area{ display:table; table-layout:fixed; border-collapse:collapse; width:100%; }
+.rbbs_read_sec li.label_area{ border-bottom:1px solid #dddddd; font-size:14px; color:#666666; }
+.rbbs_read_sec li.label_area > div{ display:table-cell; height:50px; vertical-align:middle; padding-top:8px; padding-bottom:8px; }
+.rbbs_read_sec li.label_area > .label{ width:15%; text-align:center; font-weight:bold; font-size:14px; color:#666666; }
+.rbbs_read_sec li.label_area > .form{ padding-right:8px; }
+.rbbs_read_sec li.label_area > .form > *{ vertical-align:middle; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_read_sec li.label_area{ display:block; }
+	.rbbs_read_sec li.label_area > div{ display:block; height:auto; }
+	.rbbs_read_sec li.label_area > .label{ width:auto; text-align:left; }
+	.rbbs_read_sec li.label_area > .form{ padding-top:0; margin-bottom:5px; }
+}
+/**/
+.rbbs_reply_write_sec{ margin-top:50px; }
+.rbbs_reply_write_sec .cnt_box{ font-weight:bold; font-size:14px; color:#333333; }
+.rbbs_reply_write_sec .cnt_box .cnt{ color:orangered; }
+.rbbs_reply_write_sec .cnt_box > *{ vertical-align:middle; }
+.rbbs_reply_write_sec .write_box{ padding:20px; margin-top:10px; background:#f9fafb; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd; }
+.rbbs_reply_write_sec .write_box > div{ padding-right:100px; }
+.rbbs_reply_write_sec .write_box > div > textarea{ display:block; padding:5px; color:#333333; width:100%; min-height:60px; resize:vertical; box-sizing:border-box; border:1px solid #bbbbbb; }
+.rbbs_reply_write_sec .write_box > div > button{ color:white; background:#7b858d; width:90px; height:60px; font-size:15px; font-weight:bold; }
+.rbbs_reply_write_sec .write_box > div > button{ position:absolute; top:0px; right:0px; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_reply_write_sec .write_box > div{ padding-right:0; }
+	.rbbs_reply_write_sec .write_box > div > button{ margin-top:10px; position:static; width:100%; height:40px; }
+}
+/**/
+.reply_list{ }
+.reply_list > li{ padding:20px; border-bottom:1px solid #dddddd; }
+.reply_list > li > .info{ font-size:14px; color:#bdbdbd; }
+.reply_list > li > .info > *{ vertical-align:middle; }
+.reply_list > li > .info .writer{ color:#666666; }
+.reply_list > li > .info .btns{ position:absolute; top:0px; right:0px; }
+.reply_list > li > .info .btns > .btn.edit{ background:url(/front/responsive_board/dist/res/btn_read_edit.png) no-repeat; width:20px; height:20px; }
+.reply_list > li > .info .btns > .btn.reply{ background:url(/front/responsive_board/dist/res/btn_read_reply.png) no-repeat; width:20px; height:20px; }
+.reply_list > li > .info .btns > .btn.del{ background:url(/front/responsive_board/dist/res/btn_read_del.png) no-repeat; width:20px; height:20px; }
+.reply_list > li > .txt_output{ margin-top:10px; font-size:14px; line-height:20px; color:#666666; word-break:break-word; }
+/**/
+.rbbs_nav_list{ margin-top:60px; }
+.rbbs_nav_list > ul{ border-top:2px solid #545c73; }
+/**/
+.rbbs_nav_list > ul > li{ padding:20px; min-height:50px; border-bottom:1px solid #dddddd; }
+.rbbs_nav_list > ul > li > *{ vertical-align:top; }
+/*.rbbs_nav_list > ul > li > a{ outline:1px solid red; box-shadow:0px 0px 10px red; }*/
+.rbbs_nav_list > ul > li > a{ display:block; }
+/**/
+.rbbs_nav_list > ul > li > a > .title_line{ font-size:0; }
+.rbbs_nav_list > ul > li > a > .title_line{ font-size:14px; color:#333333; letter-spacing:-0.05em; font-weight:bold; }
+.rbbs_nav_list > ul > li > a > .title_line{ display:table; table-layout:fixed; border-collapse:collapse; width:100%; }
+.rbbs_nav_list > ul > li > a > .title_line > div{ display:table-cell; vertical-align:middle; }
+/**/
+.rbbs_nav_list > ul > li > a > .title_line > .flag{ font-size:0; content:''; background-repeat:no-repeat; background-position:left; text-align:center; width:20px; }
+.rbbs_nav_list > ul > li > a > .title_line > .flag.nav_text{ padding-left:5px; font-size:14px; width:60px; color:#999999; text-align:left; }
+.rbbs_nav_list > ul > li > a > .title_line > .flag.angle{ font-size:14px; color:#333333; }
+.rbbs_nav_list > ul > li > a > .title_line > .flag.angle > img{ padding-top:6px; }
+.rbbs_nav_list > ul > li > a > .title_line > .flag.new{ background-image:url(/front/responsive_board/dist/res/ic_new.png); background-position:center; }
+/**/
+.rbbs_nav_list > ul > li > a > .title_line > .title{ width:100%; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_nav_list > ul > li{ padding-left:5px; }
+}
+/**/
+.rbbs_list_thumb_sec{ }
+.rbbs_list_thumb_sec > ul{ border-top:2px solid #545c73; }
+/**/
+.rbbs_list_thumb_sec > ul > li{ padding:20px; min-height:50px; border-bottom:1px solid #dddddd; }
+.rbbs_list_thumb_sec > ul > li > *{ vertical-align:top; }
+/*.rbbs_list_thumb_sec > ul > li > a{ outline:1px solid red; box-shadow:0px 0px 10px red; }*/
+.rbbs_list_thumb_sec > ul > li > a{ display:block; padding-left:200px; }
+/**/
+.rbbs_list_thumb_sec > ul > li > a > .pic_area{ width:160px; }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area > .thumb{ width:100%; background-color:#f7f7f7; box-sizing:border-box; border:1px solid #dcdcdc; }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area > .thumb{ overflow:hidden; }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area > .thumb > div{ background-position:center; background-repeat:no-repeat; padding-bottom:56.25%; }
+/*.rbbs_list_thumb_sec > ul > li > a > .pic_area > .thumb > div{ background-size:contain; }*/
+.rbbs_list_thumb_sec > ul > li > a > .pic_area > .thumb > div{ background-size:cover; }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area > .thumb > div{ transition:all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+.rbbs_list_thumb_sec > ul > li > a:hover > .pic_area > .thumb > div{ transform:scale(1.2); }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area .pic{ width:100%; padding-bottom:56.25%; font-size:0; background-color:#f7f7f7; box-sizing:border-box; border:1px solid #dcdcdc; }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area .pic > img{ max-height:100%; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area{ position:absolute; top:0px; left:0px; }
+.rbbs_list_thumb_sec > ul > li > a > .pic_area .ic_new{ position:absolute; top:0px; left:0px; }
+/**/
+.rbbs_list_thumb_sec > ul > li > a > .title_line{ font-size:0; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line{ font-size:14px; color:#333333; letter-spacing:-0.05em; font-weight:bold; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line{ display:inline-table; table-layout:fixed; border-collapse:collapse; max-width:100%; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > div{ display:table-cell; vertical-align:middle; }
+/**/
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .flag{ font-size:0; content:''; background-repeat:no-repeat; background-position:left; text-align:center; width:20px; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .flag.private{ background-image:url(/front/responsive_board/dist/res/ic_private.png); }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .flag.top{ background-image:url(/front/responsive_board/dist/res/ic_top.png); }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .flag.new{ background-image:url(/front/responsive_board/dist/res/ic_new.png); background-position:center; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .flag.reply{ font-size:14px; color:#999999; }
+/**/
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .state{ font-size:12px; width:46px; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .state > span{ display:inline-block; min-width:40px; line-height:20px; text-align:center; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .state > span{ background:#c3c8cc; color:white; box-sizing:border-box; border:1px solid #c3c8cc; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .state.type1 > span{ background:#50b1d4; color:white; border-color:#50b1d4; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .state.type2 > span{ background:#52b9a6; color:white; border-color:#52b9a6; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .state.type3 > span{ background:white; color:#d01e1e; border-color:#d01e1e; }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .state.type4 > span{ background:white; color:#cdcdcd; border-color:#cdcdcd; }
+/**/
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .title{ }
+.rbbs_list_thumb_sec > ul > li > a > .title_line > .title > .text{ height:40px; }
+/**/
+.rbbs_list_thumb_sec > ul > li > a > .cont_line{ margin-bottom:10px; }
+.rbbs_list_thumb_sec > ul > li > a > .cont_line > .text{ height:40px; font-size:14px; line-height:20px; color:#666666; letter-spacing:-0.05em; }
+/**/
+.rbbs_list_thumb_sec > ul > li > a > .info_line{ font-size:0; }
+.rbbs_list_thumb_sec > ul > li > a > .info_line > div{ vertical-align:middle; display:inline-block; font-size:12px; color:#999999; }
+.rbbs_list_thumb_sec > ul > li > a > .info_line > div + div{ margin-left:7px; padding-left:10px; }
+.rbbs_list_thumb_sec > ul > li > a > .info_line > div + div:before{ background:#666666; width:1px; height:10px; position:absolute; top:50%; margin-top:-5px; left:0px; content:''; display:inline-block; }
+/**/
+.rbbs_list_thumb_sec > ul > li.no_list{ background:#f9fafb; text-align:center; line-height:220px; font-size:14px; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_list_thumb_sec > ul > li > a{ padding-left:170px; }
+}
+.rbbs_faq_list_sec{ }
+.rbbs_faq_list_sec > ul{ border-top:2px solid #545c73; }
+.rbbs_faq_list_sec > ul > li{ border-bottom:1px solid #dddddd; }
+.rbbs_faq_list_sec > ul > li > .boxQ{ padding:20px 35px; }
+.rbbs_faq_list_sec > ul > li > .boxQ > button{ text-align:left; padding-left:35px; color:#333333; font-size:14px; letter-spacing:-0.05em; }
+.rbbs_faq_list_sec > ul > li > .boxQ > button:before{ background:url(/front/responsive_board/dist/res/ic_Q.png) no-repeat; width:25px; height:19px; content:''; display:inline-block; }
+.rbbs_faq_list_sec > ul > li > .boxQ > button:before{ position:absolute; top:0px; left:0px; }
+.rbbs_faq_list_sec > ul > li > .boxA{ border-top:1px solid #dddddd; padding:35px; background:#f7f8f9; color:#666666; font-size:14px; line-height:20px; }
+.rbbs_faq_list_sec > ul > li > .boxA{ display:none; }
+.rbbs_faq_list_sec > ul > li > .boxA > .text{ padding-left:35px; }
+.rbbs_faq_list_sec > ul > li > .boxA > .text:before{ background:url(/front/responsive_board/dist/res/ic_A.png) no-repeat; width:25px; height:19px; content:''; display:inline-block; }
+.rbbs_faq_list_sec > ul > li > .boxA > .text:before{ position:absolute; top:0px; left:0px; }
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_faq_list_sec > ul > li > .boxQ{ padding:20px; }
+	.rbbs_faq_list_sec > ul > li > .boxA{ padding:20px; }
+}
+/**/
+.rbbs_photo_list{ }
+.rbbs_photo_list > ul{ border-top:2px solid #545c73; font-size:0; padding-top:20px; }
+.rbbs_photo_list > ul > li{ width:31.35%; display:inline-block; margin-bottom:2.96%; margin-right:2.96%; }
+.rbbs_photo_list > ul > li > a{ display:block; }
+.rbbs_photo_list > ul > li > a .pic_area{ width:100%; background-image:url(/front/imgs/pattern_bg/bg_empty.png); }
+.rbbs_photo_list > ul > li > a .pic_area > .thumb{ width:100%; overflow:hidden; }
+.rbbs_photo_list > ul > li > a .pic_area > .thumb{ box-sizing:border-box; border:1px solid #dcdcdc; }
+.rbbs_photo_list > ul > li > a .pic_area > .thumb > div{ padding-bottom:56.25%; background-repeat:no-repeat; background-position:center; }
+.rbbs_photo_list > ul > li > a .pic_area > .thumb > div{ background-size:cover; }
+.rbbs_photo_list > ul > li > a .pic_area > .thumb > div{ transition:all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+.rbbs_photo_list > ul > li > a:hover .pic_area > .thumb > div{ transform:scale(1.2); }
+/*.rbbs_photo_list > ul > li > a .pic_area > .thumb > div{ background-size:contain; }*/
+.rbbs_photo_list > ul > li > a .pic_area .pic{ width:100%; padding-bottom:56.25%; font-size:0; background-color:#f7f7f7; box-sizing:border-box; border:1px solid #dcdcdc; }
+.rbbs_photo_list > ul > li > a .pic_area .pic > img{ max-height:100%; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; }
+.rbbs_photo_list > ul > li > a .pic_area .ic_new{ font-size:14px; position:absolute; top:5px; left:5px; z-index:5; }
+.rbbs_photo_list > ul > li > a .pic_area .play_dim{ background-color:rgba(0, 0, 0, 0.6); background-position:center; background-repeat:no-repeat; background-image:url(/front/responsive_board/dist/res/btn_play.png); }
+.rbbs_photo_list > ul > li > a .pic_area .play_dim{ z-index:0; position:absolute; top:0px; left:0px; width:100%; height:100%; }
+.rbbs_photo_list > ul > li > a .info{ padding:5px; }
+.rbbs_photo_list > ul > li > a .info .title{ font-weight:bold; margin-top:5px; height:40px; line-height:20px; font-size:14px; color:#333333; letter-spacing:-0.05em; }
+.rbbs_photo_list > ul > li > a .info .date{ margin-top:10px; font-size:12px; color:#666666; text-align:right; }
+/******************************************
+	이하
+*******************************************/
+/* 1023이하 - 태블릿 세로 이하▼ 화면[768 PSD]*/
+@media all and (max-width:1023px){
+	.rbbs_photo_list > ul > li{ width:49.33%; margin-right:1.33%; }
+}
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.rbbs_photo_list > ul{ text-align:center; }
+	/*.rbbs_photo_list > ul > li{ text-align:left; width:77.08%; margin-right:0; }*/
+	.rbbs_photo_list > ul > li{ text-align:left; width:100%; margin-right:0; }
+}
+/******************************************
+	범위 지정
+*******************************************/
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+	.rbbs_photo_list > ul > li:nth-child(2n){ margin-right:0; }
+}
+/******************************************
+	이상
+*******************************************/
+/* 1024이상 - 데스크탑 or 테블릿 가로 이상▲ 화면[1200 PSD]*/
+@media all and (min-width:1024px){
+	.rbbs_photo_list > ul > li:nth-child(3n){ margin-right:0; }
+}
+/**/
+.admin_btns{ padding-bottom:20px; text-align:center; }
+
+
+

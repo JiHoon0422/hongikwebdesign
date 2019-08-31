@@ -1,0 +1,3 @@
+html_beautify(code);
+css_beautify(code);
+js_beautify(code);

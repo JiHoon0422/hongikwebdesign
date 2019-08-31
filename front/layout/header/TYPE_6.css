@@ -1,0 +1,64 @@
+/**/
+#header{ height:53px; background:rgba(0, 0, 0, 0.5); border-bottom:none; }
+#header .logo{ display:none; }
+#homePageSubTitle{ display:none; }
+#header .gnb_sec > .inside{ height:53px; }
+#header #gnbWrapper{ z-index:1; position:absolute; top:50px; right:50%; margin-right:-600px; }
+#header #gnbWrapper{ display:none; }
+#header #gnb{ text-align:right; }
+#header #gnb > li{ display:inline-block; }
+#header #gnb > li + li{ margin-left:50px; }
+#header #gnb > li > a{ font-size:17px; font-weight:bold; color:#333333; }
+#header #gnb > li > a{ transition:all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+#header #gnb > li > a:hover{ color:#4475cb; }
+#header #gnb > li > ul{ display:none; }
+#header .gnb_clone_sec{ display:none !important; }
+/**/
+#leftGNB{ z-index:9999; position:fixed; top:0px; left:0px; }
+#leftGNB{ background:#001857; width:310px; height:100%; padding:0 20px; }
+#leftGNB > .head{ z-index:1; position:absolute; top:0px; left:0px; }
+#leftGNB > .head{ width:100%; padding:25px 20px; text-align:center; }
+#leftGNB > .head > .left_gnb_logo > a{ vertical-align:top; }
+#leftGNB > .head > .left_gnb_logo > a > img{ vertical-align:top; }
+#leftGNB > .head > .sub_title{ margin-top:20px; width:100%; border-radius:18px; padding:7px 0; background:#1a3068; color:white; font-size:16px; letter-spacing:-0.075em;; }
+#leftGNB > .body{ outline:1px dashed red; box-shadow:0px 0px 10px red; }
+#leftGNB > .body{ height:100%; overflow-y:auto; }
+/**/
+#leftGnbClone{}
+#leftGnbClone > li{ }
+#leftGnbClone > li.has_child:after{ position:absolute; top:16px; right:15px; content:''; display:inline-block; }
+#leftGnbClone > li.has_child:after{ width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-top:6px solid white; }
+#leftGnbClone > li + li{ border-top:1px solid #2f4274; }
+#leftGnbClone > li > a{ display:block; width:100%; padding:10px 0; padding-left:45px; font-family:NanumSquare; font-size:18px; font-weight:bold; color:white; }
+/*2dep*/
+#leftGnbClone > li > ul{ background:#0467c2; padding:15px 0; padding-left:50px; padding-right:35px; }
+#leftGnbClone > li > ul{ display:none; }
+#leftGnbClone > li.on > ul{ display:block; }
+#leftGnbClone > li > ul > li{}
+#leftGnbClone > li > ul > li > a{ padding-left:9px; font-size:16px; color:#9bcefc; letter-spacing:-0.05em; line-height:1.5em; }
+#leftGnbClone > li > ul > li > a:before{ background:white; width:4px; height:4px; margin-top:-2px; position:absolute; top:0.75em; left:0px; content:''; display:inline-block; }
+#leftGnbClone > li > ul > li.on > a{ color:white; }
+/*3dep*/
+#leftGnbClone > li > ul > li > ul{ margin-top:5px; margin-bottom:5px; padding-left:13px; }
+#leftGnbClone > li > ul > li > ul{ display:none; }
+#leftGnbClone > li > ul > li.on > ul{ display:block; }
+#leftGnbClone > li > ul > li > ul > li{}
+#leftGnbClone > li > ul > li > ul > li + li{ margin-top:5px; }
+#leftGnbClone > li > ul > li > ul > li > a{ padding-left:8px; font-size:14px; color:#9bcefc; letter-spacing:-0.05em; line-height:1.5em; }
+#leftGnbClone > li > ul > li > ul > li > a:before{ background:#9bcefc; width:4px; height:1px; position:absolute; top:0.75em; left:0px; content:''; display:inline-block; }
+#leftGnbClone > li > ul > li > ul > li.on > a{ color:white; }
+/**/
+#leftGNB > .foot{ position:absolute; bottom:0px; left:0px; }
+#leftGNB > .foot{ padding:25px 20px 65px; }
+#leftGNB > .foot > .sns_box{ font-size:0; }
+#leftGNB > .foot > .sns_box > a{}
+#leftGNB > .foot > .sns_box > a + a{ margin-left:8px; }
+#leftGNB > .foot > .link_select_box{ font-size:0; margin-top:20px; padding-right:55px; }
+#leftGNB > .foot > .link_select_box > select{ width:100%; background:#001857; box-sizing:border-box; border:1px solid #4d5e8a; color:white; font-size:13px; height:32px; }
+#leftGNB > .foot > .link_select_box > button{ background:#001857; box-sizing:border-box; border:1px solid #4d5e8a; color:white; font-size:13px; height:32px; }
+#leftGNB > .foot > .link_select_box > button{ position:absolute; top:0px; right:0px; }
+#leftGNB > .foot > .link_select_box > button{ width:50px; }
+#leftGNB > .foot > .sub_title2{ margin-top:15px; font-size:15px; letter-spacing:-0.025em; color:white; }
+#leftGNB > .foot > .address{ margin-top:10px; color:white; font-size:13px; line-height:1.5em; }
+#leftGNB > .foot > .copyright{ margin-top:50px; font-size:13px; color:#6d738b; }
+

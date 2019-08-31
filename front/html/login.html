@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- subpage_head [2016-04-12] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/reset.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/common.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/styles/subpage.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/underscore-min.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+	<script type="text/javascript" src="/front/scripts/publisher.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/default.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/iframe_auto_fit.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/subpage.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/responsive_board/dist/responsive_board.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/responsive_board/dist/responsive_board.js?ver=20171013"></script>
+	<!-- // subpage_head [2016-04-12] -->
+	<title>홈페이지</title>
+	<script type="text/javascript" src="/js/common.js?ver=20171013"></script>
+	<script type="text/javascript" src="/js/www.js?ver=20171013"></script>
+</head>
+<body>
+<div class="page" data-mc="099001">
+	<!-- header [2016-04-22] -->
+	<div id="header">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/header.html');
+		</script>
+	</div>
+	<!-- // header [2016-04-22] -->
+	<!-- body -->
+	<div id="body">
+		<div id="main" class="main">
+			<div id="contents">
+				<link rel="stylesheet" type="text/css" href="/front/styles/login.css"/>
+				<!-- section -->
+				<div class="section">
+					<form class="login_form">
+						<div class="logo"></div>
+						<div class="input_layout">
+							<div class="input_area">
+								<div>
+									<span class="ico id"></span>
+									<input type="text"/>
+								</div>
+								<div>
+									<span class="ico pw"></span>
+									<input type="password"/>
+								</div>
+							</div>
+							<div class="btn_area">
+								<button type="button">로그인</button>
+							</div>
+						</div>
+						<div class="utils_layout">
+							<div>
+								<div class="hold_chk">
+									<input id="chkHoldLoginState" type="checkbox"/>
+									<label for="chkHoldLoginState">로그인 상태 유지</label>
+								</div>
+							</div>
+							<div>
+								<ul class="login_utils">
+									<li><a href="#">아이디 찾기</a></li>
+									<li><a href="#">비밀번호 찾기</a></li>
+									<li><a href="#">회원가입</a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="info_list">
+							<li>아이디는 학번, 교직원 번호로 되어 있습니다.</li>
+							<li>개인정보 보호를 위하여 비밀번호는 정기적으로 변경해주세요.</li>
+							<li>비밀번호를 분실하신 경우는 비밀번호 찾기를 이용하시기 바랍니다.</li>
+						</ul>
+					</form>
+				</div>
+				<!-- // section -->
+				<!-- section -->
+				<div class="section">
+					<div class="login_sns">
+						<div class="inner">
+							<div class="title0">Social Login</div>
+							<div class="desc">기존에 사용하시는 계정으로 간단하게 회원가입 하세요.</div>
+							<ul>
+								<li>
+									<button class="button naver"></button>
+								</li>
+								<li>
+									<button class="button kakao"></button>
+								</li>
+								<li>
+									<button class="button facebook"></button>
+								</li>
+								<li>
+									<button class="button google"></button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // section -->
+			</div>
+		</div>
+	</div>
+	<!-- // body  -->
+	<!-- footer [2016-04-22] -->
+	<div id="footer">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/footer.html');
+		</script>
+	</div>
+	<!-- // footer [2016-04-22] -->
+</div>
+</body>
+</html>

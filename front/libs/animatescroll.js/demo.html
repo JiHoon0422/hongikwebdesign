@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/front/libs/animatescroll.js/animatescroll.js"></script>
+	<style type="text/css">
+		.box{ height:2000px; background:blue; width:300px; }
+		#target{ width:100px; height:100px; background:red; }
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			//http://plugins.compzets.com/animatescroll
+			$(window).click(function( e ){
+				$('#target').animatescroll();
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="box"></div>
+<div id="target">target</div>
+<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- popup_head [2016-11-26] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script src="/front/scripts/reset.js?ver=20171013"></script>
+	<script src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.date.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/libs/pickadate.js-3.5.6/lib/themes/default.time.css?ver=20171013"/>
+	<script src="/front/libs/pickadate.js-3.5.6/lib/legacy.js?ver=20171013"></script>
+	<script src="/front/libs/pickadate.js-3.5.6/lib/picker.js?ver=20171013"></script>
+	<script src="/front/libs/pickadate.js-3.5.6/lib/picker.date.js?ver=20171013"></script>
+	<script src="/front/libs/pickadate.js-3.5.6/lib/picker.time.js?ver=20171013"></script>
+	<script src="/front/libs/pickadate.js-3.5.6/lib/translations/ko_KR.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/responsive_board/dist/responsive_board.css?ver=20171013"/>
+	<script src="/front/responsive_board/dist/responsive_board.js?ver=20171013"></script>
+	<!-- // popup_head [2016-11-26] -->
+	<title>홈페이지</title>
+	<link rel="stylesheet" type="text/css" href="/front/styles/print_a4.css"/>
+	<style type="text/css">
+		.print_wrap > .print_no{ position:absolute; top:42px; left:27px; font-size:12px; color:#666; letter-spacing:-0.050em; }
+		.print_wrap > .title_box{ padding:9px; display:table; width:100%; height:113px; text-align:center; position:absolute; left:0px; top:119px; }
+		.print_wrap > .title_box > p{ vertical-align:middle; display:table-cell; font-size:42px; color:#333; letter-spacing:-0.075em; }
+		.print_wrap > .info_box{ position:absolute; top:258px; width:100%; }
+		.print_wrap > .info_box > table{ width:250px; margin:0 auto; }
+		.print_wrap > .info_box > table > tbody > tr > td{ vertical-align:top; padding:10px 0px 10px 10px; text-align:left; font-size:14px; color:#333; letter-spacing:-0.075em; }
+		.print_wrap > .info_box > table > tbody > tr > .label{ padding-top:11px; padding-left:0px; color:#666; font-size:12px; letter-spacing:0.1em; font-weight:bold; }
+		.print_wrap > .info_box > table > tbody > tr > td > div{ top:6px; width:2px; height:8px; box-sizing:border-box; border:1px solid #DADADA; }
+		.print_wrap > .desc{ padding:0px 50px; width:100%; text-align:left; position:absolute; left:0px; top:500px; font-size:24px; color:#333; letter-spacing:-0.075em; }
+		.print_wrap > .date{ width:100%; text-align:center; position:absolute; left:0px; bottom:147px; font-size:14px; color:#333; letter-spacing:-0.075em; }
+		.print_wrap > .chief{ width:100%; text-align:center; position:absolute; left:0px; bottom:105px; font-weight:bold; font-size:22px; color:#333; letter-spacing:-0.075em; }
+		.print_wrap > .chief > span > img{ width:50px; height:50px; position:absolute; right:-38px; top:-9px; }
+		.print_wrap > .btns{ text-align:center; position:absolute; bottom:-50px; left:0px; width:100%; }
+		@media print{
+			.print_wrap > .btns{ display:none; }
+		}
+	</style>
+</head>
+<body>
+<div class="page">
+	<div class="paper">
+		<div class="content print_wrap">
+			<div class="print_no">제2016-이수-133호</div>
+			<div class="title_box">
+				<!--<p>비교과 프로그램 이수증 비교과 프로그램 </p>-->
+				<p>비교과 프로그램 이수증</p>
+			</div>
+			<div class="info_box">
+				<table>
+					<colgroup>
+						<col style="width:70px;"/>
+						<col style="width:1px;"/>
+						<col/>
+					</colgroup>
+					<tbody>
+					<tr>
+						<td class="label">성명(학번)</td>
+						<td>
+							<div></div>
+						</td>
+						<td>김학생(201212345)</td>
+					</tr>
+					<tr>
+						<td class="label">학부/학과</td>
+						<td>
+							<div></div>
+						</td>
+						<td>컴퓨터공학전공</td>
+					</tr>
+					<tr>
+						<td class="label">프로그램명</td>
+						<td>
+							<div></div>
+						</td>
+						<td>2016년 Global Field Trip 2016년 Global Field</td>
+						<!--<td>2016년 Global Field Trip</td>-->
+					</tr>
+					<tr>
+						<td class="label">참여기간</td>
+						<td>
+							<div></div>
+						</td>
+						<td>2016.05.24 ~ 2016.05.24</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="desc">
+				위 학생은 서원대학교 교육혁신원에서 주관하는
+				비교과 프로그램을 정히 이수하였기에
+				이 증서를 수여합니다.
+			</div>
+			<div class="date">2016년 8월 31일</div>
+			<div class="chief">
+				<span>서원대학교 교육혁신원장<img class="sign" src="/front/imgs/print/sign.png" alt=""/></span>
+			</div>
+			<div class="btns">
+				<a onclick="window.print();" class="btn btn0">인쇄</a>
+				<a onclick="window.close();" class="btn btn0">닫기</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

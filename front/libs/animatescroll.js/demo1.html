@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo1</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/front/libs/animatescroll.js/animatescroll.js"></script>
+	<style type="text/css">
+		#page{ margin-top:100px; padding:200px; overflow:scroll; height:200px; box-sizing:border-box; border:1px solid green; }
+		.box{ height:2000px; background:blue; width:300px; }
+		#target{ width:100px; height:100px; background:red; }
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			//http://plugins.compzets.com/animatescroll
+			//http://easings.net/ko
+			$(window).click(function( e ){
+				var option={
+					element:'#page',//원하는 스크롤박스. Default : "body"
+					padding:20,//상단으로부터의 거리
+					easing:'easeOutCubic',
+					scrollSpeed:300,
+					onScrollStart:function(){
+						console.log('scroll started');
+					},
+					onScrollEnd:function(){
+						console.log('scroll ended');
+					}
+					
+				};
+				$('#target').animatescroll(option);
+				
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="page">
+	<div class="box"></div>
+	<div id="target">target</div>
+	<div class="box"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+	<style type="text/css">
+		.target{ width:50%; box-sizing:border-box; border:1px solid #F00; margin:20px auto; }
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/jquery.dotdotdot.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//http://dotdotdot.frebsite.nl/
+			$('#target0').dotdotdot();
+			$(window).resize(function(e) {
+				//수동으로 줄임표를 업데이트해야합니까? "업데이트"- 이벤트를 트리거하십시오.
+				//모든 맞춤 이벤트는 ".dot"로 네임 스페이스가 지정되어 있으므로,
+				//다른 스크립트와의 간섭을 방지하려면 다음과 같이 이벤트를 트리거하는 것이 가장 좋습니다.
+				$('#target0').trigger('update.dot');
+			});
+			
+			//TODO: 말줄임 해제
+			$('#btn0').click(function(e) {
+				$('#target0').trigger('destroy.dot');
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			var option={
+				/*	줄임표로 추가 할 텍스트. */
+				ellipsis:'... ',
+				
+				/*	텍스트 / HTML을 자르는 방법: 'word'/'letter'/'children' */
+				wrap:'word',
+				
+				/*	긴 단어의 'letter'에 대한 랩 옵션 대체 */
+				fallbackToLetter:true,
+				
+				/*	jQuery - 줄임표 다음에 유지하고 넣을 요소의 선택 자. */
+				after:null,
+				
+				/*	줄임표 업데이트 여부: true/'window' */
+				watch:true,
+				
+				/*	선택적으로 최대 높이를 설정하고 숫자 또는 함수가 될 수 있습니다.
+				 null 인 경우, 높이가 측정됩니다. */
+				height:100,
+				
+				/*	높이 옵션에 대한 편차. */
+				tolerance:0,
+				
+				/*	줄임표가 추가 된 후에 시작되는 콜백 함수.
+				 isTruncated (boolean), orgContent (string)의 두 매개 변수를받습니다. */
+				callback:function( isTruncated, orgContent ){
+					console.log(arguments);
+				},
+				
+				lastCharacter:{
+					
+					/*	잘린 텍스트의 끝에서 이러한 문자를 제거하십시오. */
+					remove:[' ', ',', ';', '.', '!', '?'],
+					
+					/*	이 배열에 포함 된 경우 줄임표를 추가하지 마십시오.
+					 절단 된 텍스트의 마지막 문자. */
+					noEllipsis:[]
+				}
+			};
+			$('#target1').dotdotdot(option);
+		});
+	</script>
+</head>
+<body>
+<div id="target0" class="target" style="height:40px;">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ...Into this beauty! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</div>
+<div style="text-align:center;"><button id="btn0">말줄임 해제</button></div>
+<div id="target1" class="target">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ...Into this beauty! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</div>
+</body>
+</html>

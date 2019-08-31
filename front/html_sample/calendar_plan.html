@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- subpage_head [2016-04-12] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/reset.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/common.css?ver=20171013"/>
+	<link rel="stylesheet" type="text/css" href="/front/styles/subpage.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/underscore-min.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+	<script type="text/javascript" src="/front/scripts/publisher.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/default.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/iframe_auto_fit.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/subpage.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/responsive_board/dist/responsive_board.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/responsive_board/dist/responsive_board.js?ver=20171013"></script>
+	<!-- // subpage_head [2016-04-12] -->
+	<title>홈페이지</title>
+	<script type="text/javascript" src="/js/common.js?ver=20171013"></script>
+	<script type="text/javascript" src="/js/www.js?ver=20171013"></script>
+</head>
+<body>
+<div class="page">
+	<!-- header [2016-04-22] -->
+	<div id="header">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/header.html');
+		</script>
+	</div>
+	<!-- // header [2016-04-22] -->
+	<!-- body -->
+	<div id="body">
+		<div id="main" class="main">
+			<div id="contents">
+				<!-- section -->
+				<div class="section">
+					<style type="text/css">
+						#planCalWrap{}
+						#planCalWrap > .head{}
+						#planCalWrap > .head > .date_box{ width:440px; margin:0 auto; text-align:center; }
+						#planCalWrap > .head > .date_box > *{ display:inline-block; line-height:40px; }
+						#planCalWrap > .head > .date_box > .date{ font-size:32px; letter-spacing:-0.05em; color:#333333; }
+						#planCalWrap > .head > .date_box > .btn_date{ position:absolute; top:0px; }
+						#planCalWrap > .head > .date_box > .btn_date.prev_year{ left:0px; background:url(/front/imgs/common/btn_cal_prev_year.png) no-repeat; width:52px; height:40px; }
+						#planCalWrap > .head > .date_box > .btn_date.prev_month{ left:57px; background:url(/front/imgs/common/btn_cal_prev_month.png) no-repeat; width:52px; height:40px; }
+						#planCalWrap > .head > .date_box > .btn_date.next_month{ right:57px; background:url(/front/imgs/common/btn_cal_next_month.png) no-repeat; width:52px; height:40px; }
+						#planCalWrap > .head > .date_box > .btn_date.next_year{ right:0px; background:url(/front/imgs/common/btn_cal_next_year.png) no-repeat; width:52px; height:40px; }
+						#planCalWrap > .body{ margin-top:15px; border-top:1px solid #656565; }
+						#planCalWrap > .body{ }
+						#planCalWrap > .body > table{ table-layout:fixed; border-collapse:collapse; width:100%; }
+						#planCalWrap > .body > table > * > tr > *{ vertical-align:middle; }
+						#planCalWrap > .body > table > * > tr > *{ border:1px solid #e3e3e3; }
+						#planCalWrap > .body > table > thead{}
+						#planCalWrap > .body > table > thead > tr{}
+						#planCalWrap > .body > table > thead > tr > th{ height:44px; font-size:18px; color:#333333; letter-spacing:-0.05em; background:#fcfdff; text-align:center; }
+						#planCalWrap > .body > table > tbody{}
+						#planCalWrap > .body > table > tbody > tr > td{ cursor:pointer; }
+						#planCalWrap > .body > table > tbody > tr > td.other_month{ cursor:default; background:#fafafb; }
+						#planCalWrap > .body > table > tbody > tr > td:hover{ background:#fafafb; }
+						#planCalWrap > .body > table > tbody > tr > td.on{ background:#0068b7; }
+						#planCalWrap > .body > table > tbody > tr > td > .day{ height:114px; }
+						#planCalWrap > .body > table > tbody > tr > td > .day > .num{ font-size:14px; color:#333333; letter-spacing:-0.1em; }
+						#planCalWrap > .body > table > tbody > tr > td > .day > .num{ width:30px; line-height:30px; text-align:center; }
+						#planCalWrap > .body > table > tbody > tr > td.other_month > .day > .num{ color:#b5b5b5; }
+						#planCalWrap > .body > table > tbody > tr > td.on > .day > .num{ color:white; }
+						/**/
+						#planCalWrap > .body > table > tbody > tr > td > .day > .event_box{ text-align:center; }
+						#planCalWrap > .body > table > tbody > tr > td > .day > .event_box > .cnt{ width:60px; margin:0 auto; border-radius:17px; line-height:34px; font-size:18px; letter-spacing:-0.05em; }
+						#planCalWrap > .body > table > tbody > tr > td > .day > .event_box > .cnt{ color:white; background:#0068b7; }
+						#planCalWrap > .body > table > tbody > tr > td.on > .day > .event_box > .cnt{ color:#0068b7; background:white; }
+						#planCalWrap > .body > table > tbody > tr > td > .day > .event_box > .text0{ margin-top:3px; font-size:14px; letter-spacing:-0.05em; }
+						#planCalWrap > .body > table > tbody > tr > td > .day > .event_box > .text0{ color:#333333; }
+						#planCalWrap > .body > table > tbody > tr > td.on > .day > .event_box > .text0{ color:white;}
+						/**/
+						#planCalWrap > .body > table > tbody > tr > td > .day > .event_layer_popup{ display:none; }
+						/* 1023이하 - 태블릿 세로 이하▼ 화면[768 PSD]*/
+@media all and (max-width:1023px){
+							#planCalWrap > .body > table > tbody > tr > td > .day{ height:94px; }
+							#planCalWrap > .body > table > tbody > tr > td > .day > .event_box > .text0{ display:none; }
+						}
+						/**/
+						#eventLayerPopup{ background:white; width:440px; box-sizing:border-box; border:1px solid #0d2e86; }
+						#eventLayerPopup > .head{ background:#0d2e86; }
+						#eventLayerPopup > .head > .date{ padding-left:25px; line-height:62px; font-size:20px; letter-spacing:-0.05em; color:white; }
+						#eventLayerPopup > .head > .pop_close{ position:absolute; top:10px; right:10px; }
+						#eventLayerPopup > .head > .pop_close{ background:url(/front/imgs/common/btn_close2.png) no-repeat center; width:40px; height:40px; }
+						#eventLayerPopup > .body{ }
+						#eventLayerPopup > .body{ padding:20px; }
+						#eventLayerPopup > .body > .event_list{ max-height:440px; overflow:auto; }
+						#eventLayerPopup > .body > .event_list > li{ padding-top:20px; padding-bottom:20px; }
+						#eventLayerPopup > .body > .event_list > li + li{ border-top:1px solid #e6e6e6; }
+						#eventLayerPopup > .body > .event_list > li > a{ padding-left:10px; }
+						#eventLayerPopup > .body > .event_list > li > a:before{ background:#333333; width:3px; height:3px; position:absolute; top:12px; left:0px; content:''; display:inline-block; }
+						#eventLayerPopup > .body > .event_list > li > a > .title{ font-size:18px; color:#333333; letter-spacing:-0.05em; }
+						#eventLayerPopup > .body > .event_list > li > a > .date{ margin-top:3px; font-size:14px; color:#999999; letter-spacing:-0.05em; }
+						/* 1023이하 - 태블릿 세로 이하▼ 화면[768 PSD]*/
+@media all and (max-width:1023px){
+							#eventLayerPopup > .body > .event_list{ max-height:300px; overflow:auto; }
+						}
+					</style>
+					<script type="text/javascript">
+						$(function(){
+							$('#planCalWrap > .body > table > tbody > tr > td').not('.other_month').click(function( e ){
+								$('#planCalWrap > .body > table > tbody > tr > td').removeClass('on');
+								$(this).addClass('on');
+								
+								var $eventLayerPop = $(this).find('.event_layer_popup');
+								if( $eventLayerPop.length > 0 ){
+									var html = $eventLayerPop.html();
+									LAYER_POP.PLAN_LIST(html);
+								}
+								
+							});
+							
+						});
+					</script>
+					<div id="planCalWrap">
+						<div class="head">
+							<div class="date_box">
+								<a href="#" class="btn_date prev_year"></a>
+								<a href="#" class="btn_date prev_month"></a>
+								<div class="date">2018.12</div>
+								<a href="#" class="btn_date next_month"></a>
+								<a href="#" class="btn_date next_year"></a>
+							</div>
+						</div>
+						<div class="body">
+							<table>
+								<thead>
+								<tr>
+									<th>SUN</th>
+									<th>MON</th>
+									<th>TUE</th>
+									<th>WED</th>
+									<th>THU</th>
+									<th>FRI</th>
+									<th>SAT</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="other_month">
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td class="other_month">
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+											<div class="event_box">
+												<div class="cnt">02건</div>
+												<div class="text0">일정이 있습니다.</div>
+											</div>
+											<div class="event_layer_popup">
+												<div class="head">
+													<div class="date">12월 19일 (월)</div>
+													<button type="button" class="pop_close"></button>
+												</div>
+												<div class="body">
+													<ul class="event_list">
+														<li>
+															<a href="#">
+																<div class="title">2019대학원 학위논문 지도교수 확인서 제출 마감 확인서 제출 마감</div>
+																<div class="date">2018.12.01 ~ 2018.12.31</div>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<div class="title">2019대학원 학위논문 지도교수 확인서 제출 마감 2019대학원 학위논문 지도교수 확인서 제출 마감</div>
+																<div class="date">2018.12.01 ~ 2018.12.31</div>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<div class="title">2019대학원 학위논문 지도교수 확인서 제출 마감 확인서 제출 마감</div>
+																<div class="date">2018.12.01 ~ 2018.12.31</div>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<div class="title">2019대학원 학위논문 지도교수 확인서 제출 마감 2019대학원 학위논문 지도교수 확인서 제출 마감</div>
+																<div class="date">2018.12.01 ~ 2018.12.31</div>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<div class="title">2019대학원 학위논문 지도교수 확인서 제출 마감 확인서 제출 마감</div>
+																<div class="date">2018.12.01 ~ 2018.12.31</div>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<div class="title">2019대학원 학위논문 지도교수 확인서 제출 마감 2019대학원 학위논문 지도교수 확인서 제출 마감</div>
+																<div class="date">2018.12.01 ~ 2018.12.31</div>
+															</a>
+														</li>
+													</ul>
+													<div class="txtc" style="margin-top:30px;">
+														<button type="button" class="btnui btnui_999 pop_close"><span>닫기</span></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+											<div class="event_box">
+												<div class="cnt">02건</div>
+												<div class="text0">일정이 있습니다.</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+									<td>
+										<div class="day">
+											<div class="num">31</div>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- // section -->
+			</div>
+		</div>
+	</div>
+	<!-- // body  -->
+	<!-- footer [2016-04-22] -->
+	<div id="footer">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/footer.html');
+		</script>
+	</div>
+	<!-- // footer [2016-04-22] -->
+</div>
+</body>
+</html>
+
+
+
+

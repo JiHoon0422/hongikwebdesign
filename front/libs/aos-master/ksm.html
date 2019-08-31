@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>ksm</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/front/libs/aos-master/dist/aos.css"/>
+  <script type="text/javascript" src="/front/libs/aos-master/dist/aos.js"></script>
+  <script>
+    $(window).load(function(){
+      //http://michalsnik.github.io/aos/
+      //https://github.com/michalsnik/aos
+  
+      // You can also pass an optional settings object
+      // below listed default settings
+      AOS.init({
+        // Global settings:
+        disable:false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent:'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName:'aos-init', // class applied after initialization
+        animatedClassName:'aos-animate', // class applied on animation
+        useClassNames:false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver:false, // disables automatic mutations' detections (advanced)
+        debounceDelay:50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay:99, // the delay on throttle used while scrolling the page (advanced)
+    
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset:120, // offset (in px) from the original trigger point
+        delay:0, // values from 0 to 3000, with step 50ms
+        duration:400, // values from 0 to 3000, with step 50ms
+        //https://github.com/michalsnik/aos#animations
+        // default easing for AOS animations
+        easing:'ease',
+        // easing:'ease-in-out-cubic',
+        once:false, // whether animation should happen only once - while scrolling down
+        mirror:false, // whether elements should animate out while scrolling past them
+        anchorPlacement:'top-bottom', // 애니메이션 실행되는 기준점
+    
+      });
+    });
+  </script>
+</head>
+<body>
+<style type="text/css">
+  .layout190509094216{ font-size:0; }
+  .layout190509094216 > div{ display:inline-block; }
+</style>
+<div style="height:2000px; outline:1px dashed red; box-shadow:0px 0px 10px red;">
+  blank
+</div>
+<!--
+<div
+  data-aos="fade-up"
+  data-aos-offset="200"
+  data-aos-delay="50"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-out"
+  data-aos-mirror="true"
+  data-aos-once="false"
+  data-aos-anchor-placement="top-center"
+>
+</div>
+-->
+<div class="layout190509094216">
+  <div data-aos="fade-up"><img src="http://gifpng.com/300x250?background-color=ffddd4&color=666666" alt=""/></div>
+  <div data-aos="fade-up" data-aos-delay="150"><img src="http://gifpng.com/300x250?background-color=ffddd4&color=666666" alt=""/></div>
+  <div data-aos="fade-up" data-aos-delay="300"><img src="http://gifpng.com/300x250?background-color=ffddd4&color=666666" alt=""/></div>
+</div>
+</body>
+</html>

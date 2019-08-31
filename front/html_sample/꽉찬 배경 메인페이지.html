@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta id="myViewport" name="viewport"/>
+	<script type="text/javascript" src="/front/scripts/dynamic_viewport.js?ver=20171013"></script>
+	<link rel="shortcut icon" href="/favicon.ico?ver=20171013">
+	<!-- index_head [2017-02-23] -->
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/reset.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/common.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/underscore-min.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.extend.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.cookie.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.browser.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jQuery.dotdotdot/dist/jquery.dotdotdot.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/jquery.word-break-keep-all.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/libs/ksm-template-engine/ksm-template-engine.js"></script>
+	<script type="text/javascript" src="/front/scripts/publisher.js?ver=20171013"></script>
+	<script type="text/javascript" src="/front/scripts/default.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/UI.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/UI.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/libs/slick-1.6.0/slick/slick.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/libs/slick-1.6.0/slick/slick.js?ver=20171013"></script>
+	<link rel="stylesheet" type="text/css" href="/front/styles/index.css?ver=20171013"/>
+	<script type="text/javascript" src="/front/scripts/index.js?ver=20171013"></script>
+	<!-- // index_head [2017-02-23] -->
+	<title>홈페이지</title>
+	<script type="text/javascript" src="/js/common.js?ver=20171013"></script>
+	<script type="text/javascript" src="/js/www.js?ver=20171013"></script>
+</head>
+<body>
+<!-- slick_slide -->
+<div id="fullBgSlideWrap">
+	<div id="fullBgSlide">
+		<div>
+			<div class="item">
+				<div class="thumb only_desktop">
+					<div style="background-image:url(http://gifpng.com/1920x1000?background-color=ffddd4&color=666666);"></div>
+				</div>
+				<div class="thumb only_tablet">
+					<div style="background-image:url(http://gifpng.com/1024x1720?background-color=ffddd4&color=666666);"></div>
+				</div>
+				<div class="thumb only_mobile">
+					<div style="background-image:url(http://gifpng.com/768x2214?background-color=ffddd4&color=666666);"></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="item">
+				<div class="thumb only_desktop">
+					<div style="background-image:url(http://gifpng.com/1920x1000?background-color=ffddd4&color=666666);"></div>
+				</div>
+				<div class="thumb only_tablet">
+					<div style="background-image:url(http://gifpng.com/1024x1720?background-color=ffddd4&color=666666);"></div>
+				</div>
+				<div class="thumb only_mobile">
+					<div style="background-image:url(http://gifpng.com/768x2214?background-color=ffddd4&color=666666);"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fullBgSlideButtons">
+		<div id="fullBgSlideArrows"></div>
+		<div id="fullBgSlideDots"></div>
+		<button id="fullBgSlidePlay" type="button" title="자동 넘김 시작">PLAY</button>
+		<button id="fullBgSlidePause" type="button" title="자동 넘김 중지">PAUSE</button>
+	</div>
+	<style type="text/css">
+		/**/
+		#fullBgSlideWrap{ width:100%; height:100%; }
+		#fullBgSlideWrap{ z-index:0; position:fixed; top:0px; left:0px; }
+		#fullBgSlide{ width:100%; height:100%; margin:0 auto; }
+		#fullBgSlide > .slick-list{ height:100%; }
+		#fullBgSlide > .slick-list > .slick-track{ height:100%; }
+		#fullBgSlide > .slick-list > .slick-track > .slick-slide{ height:100%; }
+		/**/
+		#fullBgSlide .item{ width:100%; height:100%; display:block; }
+		#fullBgSlide .item > .thumb{ width:100%; height:100%; font-size:0; }
+		#fullBgSlide .item > .thumb > div{ background-color:#dddddd; background-size:cover; background-repeat:no-repeat; background-position:left top; height:100%; }
+		/**/
+		#fullBgSlideButtons{ position:absolute; top:50%; left:50%; z-index:5; font-size:0; }
+		#fullBgSlideButtons{ background:rgba(0, 0, 0, 0.3); padding:5px 10px; border-radius:10px; }
+		#fullBgSlideButtons > *{ vertical-align:middle; }
+		#fullBgSlideButtons > * + *{ margin-left:5px; }
+		#fullBgSlidePause{ background:url(/front/imgs/common/ico_pause.png) no-repeat; width:24px; height:24px; font-size:0; }
+		#fullBgSlidePlay{ background:url(/front/imgs/common/ico_play.png) no-repeat; width:24px; height:24px; font-size:0; }
+		#fullBgSlidePlay{ display:none; }
+		/**/
+		#fullBgSlideDots{ display:inline-block; }
+		#fullBgSlideDots > *{ vertical-align:top; }
+		#fullBgSlideDots > .slick-dots{ display:inline-block; font-size:0; }
+		#fullBgSlideDots > .slick-dots > li{ display:inline-block; }
+		#fullBgSlideDots > .slick-dots > li > button{ font-size:0; padding:0; border:none; cursor:pointer; background:white; overflow:hidden; display:inline-block; width:10px; height:10px; }
+		#fullBgSlideDots > .slick-dots > li > button{ transition:all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+		#fullBgSlideDots > .slick-dots > li.slick-active > button{ width:80px; }
+		#fullBgSlideDots > .slick-dots > li + li{ margin-left:5px; }
+		/**/
+		#fullBgSlideArrows{ display:inline-block; }
+		#fullBgSlideArrows > .slick-arrow{ font-size:0; overflow:hidden; width:10px; height:10px; }
+		#fullBgSlideArrows > .slick-prev{ }
+		#fullBgSlideArrows > .slick-prev:before{ content:''; display:block; }
+		#fullBgSlideArrows > .slick-prev:before{ border-top:5px solid transparent; box-sizing:border-box; border-bottom:5px solid transparent; border-right:10px solid white; }
+		#fullBgSlideArrows > .slick-prev:after{ background:white; width:2px; height:100%; position:absolute; top:0px; left:0px; content:''; display:inline-block; }
+		#fullBgSlideArrows > .slick-next{ margin-left:5px; }
+		#fullBgSlideArrows > .slick-next:before{ content:''; display:block; }
+		#fullBgSlideArrows > .slick-next:before{ border-top:5px solid transparent; box-sizing:border-box; border-bottom:5px solid transparent; border-left:10px solid white; }
+		#fullBgSlideArrows > .slick-next:after{ background:white; width:2px; height:100%; position:absolute; top:0px; right:0px; content:''; display:inline-block; }
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			
+			$('#fullBgSlide').on('init', function( event, slick ){
+				//console.log('init');
+				var slideCount = slick.slideCount;
+				if( slideCount <= 1 ) $('#fullBgSlideButtons').hide();
+				
+				//setButtonsCenter();
+			});
+			
+			function setButtonsCenter (){
+				var btnsWid = $('#fullBgSlideButtons').outerWidth();
+				$('#fullBgSlideButtons').css('margin-left', (-1*btnsWid/2)+'px');
+			}
+			
+			//TODO: 일시정지
+			$('#fullBgSlidePlay').click(function( e ){
+				$('#fullBgSlide').slick('slickPlay');
+				$('#fullBgSlidePlay').hide();
+				$('#fullBgSlidePause').show();
+			});
+			
+			//TODO: 재생
+			$('#fullBgSlidePause').click(function( e ){
+				$('#fullBgSlide').slick('slickPause');
+				$('#fullBgSlidePlay').show();
+				$('#fullBgSlidePause').hide();
+			});
+			
+			//http://kenwheeler.github.io/slick/
+			$('#fullBgSlide').slick({
+				//slidesToShow:3,
+				//slidesToScroll:1,
+				variableWidth:false,
+				swipe:false,
+				fade:true,
+				dots:true,
+				arrows:true,
+				appendDots:"#fullBgSlideDots",
+				appendArrows:"#fullBgSlideArrows",
+				pauseOnFocus:true,
+				pauseOnHover:true,
+				pauseOnDotsHover:true,
+				autoplay:true,
+				autoplaySpeed:4*1000,
+				/*
+				responsive:[
+					{
+						breakpoint:1025,
+						settings:{
+							swipe:true,
+						}
+					},
+					{
+						breakpoint:768,
+						settings:{
+							swipe:true,
+						}
+					}
+				]
+				*/
+			});
+			
+		});
+	</script>
+</div>
+<!-- // slick_slide -->
+<div class="page page_index">
+	<!-- header [2016-04-22] -->
+	<div id="header">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/header.html');
+		</script>
+	</div>
+	<!-- // header [2016-04-22] -->
+	<!-- body -->
+	<div id="body">
+		<div id="main" class="main">
+			<div id="contents">
+				<!-- section -->
+				<div class="section">
+					<div class="inside">
+						<div class="noitem" style="height:1000px;"><span>TEMP</span></div>
+					</div>
+				</div>
+				<!-- // section -->
+			</div>
+		</div>
+	</div>
+	<!-- // body  -->
+	<!-- footer [2016-04-22] -->
+	<div id="footer">
+		<script type="text/javascript" class="include">
+			$.include('/front/layout/footer.html');
+		</script>
+	</div>
+	<!-- // footer [2016-04-22] -->
+</div>
+</body>
+</html>

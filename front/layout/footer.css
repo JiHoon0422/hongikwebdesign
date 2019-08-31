@@ -1,0 +1,77 @@
+/**/
+#footer{ background:#000000; position:relative; z-index:999; }
+/*#footer .foot_menu_sec{ border-bottom:1px solid #999999; }*/
+/*#footer .foot_menu_sec .inside{padding:10px 0px; }*/
+/**/
+/*#footer .foot_menu{ font-size:0; }*/
+/*#footer .foot_menu > li{ display:inline-block; }*/
+/*#footer .foot_menu > li + li{ margin-left:30px; }*/
+/*#footer .foot_menu > li + li:before{ background:#999999; width:1px; height:10px; position:absolute; top:50%; margin-top:-5px; left:-15px; content:''; display:inline-block; }*/
+/*#footer .foot_menu > li > a{ font-size:13px; line-height:19px; color:#999999; letter-spacing:-0.07em; }*/
+/*#footer .foot_menu > li > a:hover{ color:white; }*/
+/**/
+#footer .add_sec{ padding-top:95px; padding-bottom:90px; }
+#footer .add_sec .inside{ }
+/**/
+/*#footer .family_sel_box{ z-index:1; position:absolute; top:0px; right:0px; }*/
+/*#footer .family_sel_box > *{ vertical-align:middle; }*/
+/**/
+/*.custom_selui.family_sel{ min-width:160px; }*/
+/*.custom_selui.family_sel > label,*/
+/*.custom_selui.family_sel > select{ background:#313131; font-size:12px; color:#999999; border:1px solid #5e5e5e; height:42px; line-height:40px; padding-left:10px; padding-right:20px; }*/
+/*.custom_selui.family_sel > label:before{ background-image:url(/front/imgs/common/family_sel_dn.png); width:8px; height:17px; margin-top:-8px; top:50%; right:12px; }*/
+/**/
+/*#familySelBtn{ background:#313131; font-size:12px; padding:0 20px; color:#999999; border:1px solid #5e5e5e; height:42px; line-height:40px; }*/
+/**/
+/*#footer .footer_logo{ position:absolute; top:6px; left:0px; }*/
+#footer .footer_logo{ background:url(/front/imgs/common/logo_footer.png) no-repeat center; background-size:contain; width:235px; height:62px; }
+/**/
+#footer .info{ margin-top:40px; }
+#footer .info .address{ font-weight:lighter; color:white; line-height:1.5em; }
+#footer .info .address{ font-size:18px; }
+#footer .info .address > div{}
+#footer .info .address > div + div{ margin-top:13px; }
+/* 1024이상 - 데스크탑 or 테블릿 가로 이상▲ 화면[1200 PSD]*/
+@media all and (min-width:1024px){
+	#footer .copyright{ position:absolute; bottom:0px; right:0px; }
+	#footer .copyright{ background:url(/front/imgs/common/copyright.png) no-repeat; width:363px; height:22px; }
+}
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+    #footer .add_sec {padding:54px 0px 54px;}
+	#footer .footer_logo{ width:142px; height:37px; }
+	#footer .info .address{ font-size:12px;line-height: 12px; }
+	#footer .copyright{ position:absolute; bottom:0px; right:0px; }
+	#footer .copyright{ background:url(/front/imgs/common/copyright_TA.png) no-repeat; width:278px; height:17px; }
+    #footer .info .address > div + div {margin-top:5px;}
+}
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+    #footer .add_sec {padding:50px 0px 45px;}
+	#footer .footer_logo{ width:148px; height:38px; }
+	#footer .info .address{ font-size:14px; }
+	#footer .copyright{ background:url(/front/imgs/common/copyright_MO.png) no-repeat; width:278px; height:16px; }
+	#footer .copyright{ margin-top:20px; }
+}
+/**/
+.sns_links{ font-size:0; }
+.sns_links{ z-index:10; position:absolute; top:3px; right:0px; }
+.sns_links > a{ display:inline-block; vertical-align:top; }
+.sns_links > a{ width:28px; height:28px; }
+.sns_links > a{ background-size:cover; background-repeat:no-repeat; }
+.sns_links > a.ico_sns_0{ background-image:url(/front/imgs/common/ico_sns_0.png); }
+.sns_links > a.ico_sns_1{ background-image:url(/front/imgs/common/ico_sns_1.png); }
+.sns_links > a.ico_sns_2{ background-image:url(/front/imgs/common/ico_sns_2.png); }
+.sns_links > a.ico_sns_3{ background-image:url(/front/imgs/common/ico_sns_3.png); }
+.sns_links > a.ico_sns_4{ background-image:url(/front/imgs/common/ico_sns_4.png); }
+.sns_links > a + a{ margin-left:10px; }
+.sns_links > a > img{ display:block; width:100%; }
+
+@media all and (min-width:1024px) and (max-width:1440px){
+    #footer .add_sec {padding:63px 0px 59px;}
+    #footer .footer_logo {width:157px;height:42px;}
+    .sns_links > a {width:20px;height:20px;}
+    .sns_links > a + a{margin-left:6px;}
+    #footer .info .address {font-size:14px;line-height: 8px;}
+    #footer .copyright {background:url(/front/imgs/common/copyright_TA.png) no-repeat;width:264px;height:17px;bottom:-5px;}
+}

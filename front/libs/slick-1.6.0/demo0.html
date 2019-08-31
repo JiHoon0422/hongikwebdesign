@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>demo0</title>
+	<link rel="stylesheet" type="text/css" href="/front/styles/reset.css"/>
+	<script type="text/javascript" src="/front/libs/jquery-1.12.3.js"></script>
+	<style type="text/css">
+		body{ background:#555; }
+	</style>
+	
+</head>
+<body>
+
+<!-- slick_slide -->
+<link rel="stylesheet" type="text/css" href="/front/libs/slick-1.6.0/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/front/libs/slick-1.6.0/slick/slick_sogood.css"/>
+<script type="text/javascript" src="/front/libs/slick-1.6.0/slick/slick.js"></script>
+
+<div class="section vi_section">
+	<div class="inside">
+		<div id="mainSlide">
+			<div>
+				<img src="http://gifpng.com/1920x499" alt=""/>
+			</div>
+			<div>
+				<img src="http://gifpng.com/1920x499/?background-color=f5f5f5&color=333" alt=""/>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mainSlideDots"></div>
+<div id="mainSlideArrows"></div>
+<button id="btnPlay">PLAY</button>
+<button id="btnPause">PAUSE</button>
+<script type="text/javascript">
+	$(function(){
+		
+		$('#mainSlide').on('init', function(event, slick){
+			console.log('init');
+		});
+		
+		$('#mainSlide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+			console.log('beforeChange');
+			var len = slick.slideCount;
+			console.log("currentSlide : " + currentSlide, "nextSlide : " + nextSlide, "len : " + (len));
+			if(currentSlide==len-1 && nextSlide==0){
+				console.log("next");
+			}else if(currentSlide==0 && nextSlide==len-1){
+				console.log("prev");
+			}else{
+				if(currentSlide<nextSlide){
+					console.log("next");
+				}else if(currentSlide>nextSlide){
+					console.log("prev");
+				}
+				
+			}
+		});
+		
+		$('#mainSlide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+			console.log('afterChange');
+		});
+		
+		$('#btnPlay').click(function(e) {
+			$('#mainSlide').slick('slickPlay');
+		});
+		
+		$('#btnPause').click(function(e) {
+			$('#mainSlide').slick('slickPause');
+		});
+		
+		//http://kenwheeler.github.io/slick/
+		$('#mainSlide').slick({
+			//centerMode:true,
+			swipe:false,
+			fade:true,
+			dots:true,
+			arrows:true,
+			dotsClass:"main-slick-dots",
+			appendDots:"#mainSlideDots",
+			appendArrows:"#mainSlideArrows",
+			pauseOnDotsHover:true,
+			autoplay: true,
+			autoplaySpeed: 1000,
+		});
+		
+		
+	});
+</script>
+<!-- // slick_slide -->
+
+
+</body>
+</html>

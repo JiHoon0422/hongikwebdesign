@@ -1,0 +1,150 @@
+#splashLayer{ width:100%; height:100%; background:white; position:fixed; top:0px; left:0px; z-index:100000; }
+#splashLayer > div{ display:table; table-layout:fixed; border-collapse:collapse; width:100%; height:100%; }
+#splashLayer > div > div{ display:table-cell; vertical-align:middle; text-align:center; }
+/**/
+#body{ display:block; width:100%; max-width:none; }
+#body > .main{ display:block; width:100%; padding:0; padding-bottom:100px; }
+/**/
+.index_visual_text{ display:table; table-layout:fixed; border-collapse:collapse; width:100%; height:100%; }
+.index_visual_text{ z-index:1; position:absolute; top:0px; left:0px; }
+.index_visual_text{ background:transparent; }
+.index_visual_text > div{ display:table-cell; vertical-align:middle; text-align:center; }
+.index_visual_text > div{ background:url(/front/imgs/opacity_bg/bg_blank.png); }
+.index_visual_text > div > img{ vertical-align:top; margin-left:auto; margin-right:auto; }
+/**/
+#mainVisual3SlideWrap{ transition:all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+#mainVisual3SlideWrap{ background:#dddddd; overflow:hidden; }
+#mainVisual3SlideWrap{ height:1023px; }
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+	#mainVisual3SlideWrap{ height:410px; }
+}
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	#mainVisual3SlideWrap{ height:495px; }
+}
+#mainVisual3Slide{ width:100%; height:100%; }
+#mainVisual3Slide > .slick-list{ height:100%; }
+#mainVisual3Slide > .slick-list > .slick-track{ height:100%; }
+/**/
+#mainVisual3Slide .item{}
+#mainVisual3Slide .item > a{ width:100%; height:100%; display:block; }
+#mainVisual3Slide .item > a > .thumb{ width:100%; height:100%; font-size:0; }
+#mainVisual3Slide .item > a > .thumb > div{ background-color:#dddddd; background-size:cover; background-repeat:no-repeat; background-position:center; }
+#mainVisual3Slide .item > a > .thumb > div{ height:100%; }
+/*#mainVisual3Slide .item > a > .thumb > div{ transition:transform 7s linear, opacity 1s }*/
+/*#mainVisual3Slide .item > a > .thumb > div{ transform:scale(1.2); }*/
+/*#mainVisual3Slide.zoom_able .item.slick-active > a > .thumb > div{ transform:scale(1); }*/
+/**/
+#mainVisual3SlideButtons{ position:absolute; bottom:55px; left:50%; z-index:5; font-size:0; }
+/*#mainVisual3SlideButtons{ background:rgba(0, 0, 0, 0.3); padding:5px 10px; border-radius:10px; }*/
+#mainVisual3SlideButtons > *{ vertical-align:middle; }
+#mainVisual3SlideButtons > * + *{ margin-left:5px; }
+#mainVisual3SlidePause{ display:none; background:url(/front/imgs/common/ico_pause.png) no-repeat center; width:24px; height:24px; font-size:0; }
+#mainVisual3SlidePlay{ display:none; background:url(/front/imgs/common/ico_play.png) no-repeat center; width:24px; height:24px; font-size:0; }
+/**/
+#mainVisual3SlideDots{ display:inline-block; }
+#mainVisual3SlideDots > *{ vertical-align:top; }
+#mainVisual3SlideDots > .slick-dots{ display:inline-block; font-size:0; }
+#mainVisual3SlideDots > .slick-dots > li{ display:inline-block; }
+#mainVisual3SlideDots > .slick-dots > li > button{ border-radius:100%; font-size:0; padding:0; border:none; cursor:pointer; background:white; overflow:hidden; display:inline-block; width:15px; height:15px; }
+#mainVisual3SlideDots > .slick-dots > li > button{ transition:all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+#mainVisual3SlideDots > .slick-dots > li.slick-active > button{ background:#e100a0; }
+#mainVisual3SlideDots > .slick-dots > li + li{ margin-left:20px; }
+/**/
+#mainVisual3SlideArrows{ position:absolute; top:50%; left:0px; right:0; margin-left:auto; margin-right:auto; margin-top:-35px; }
+#mainVisual3SlideArrows{ width:100%; max-width:1200px; }
+#mainVisual3SlideArrows{ display:none; }
+#mainVisual3SlideArrows > .slick-arrow{ font-size:0; overflow:hidden; width:10px; height:10px; }
+#mainVisual3SlideArrows > .slick-arrow{ position:absolute; top:0px; }
+#mainVisual3SlideArrows > .slick-prev{ left:0px; background:url(/front/imgs/common/btn_prev_visual.png) no-repeat center; width:36px; height:71px; }
+#mainVisual3SlideArrows > .slick-next{ right:0px; background:url(/front/imgs/common/btn_next_visual.png) no-repeat center; width:36px; height:71px; }
+/**/
+.quick_link_sec{ padding-top:100px; }
+.quick_link_sec > .inside{ }
+.layout190530085340{ font-size:0; }
+.layout190530085340 > a{ padding:0 1em; background:black; font-weight:bold; font-size:20px; line-height:51px; color:white; }
+.layout190530085340 > a{ margin-right:22px; margin-bottom:22px; }
+.layout190530085340 > a{ transition:all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+.layout190530085340 > a:hover{ background:#ec008c; }
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+	.quick_link_sec{ padding-top:58px; }
+	.layout190530085340 > a{ font-size:12px; line-height:30px; }
+	.layout190530085340 > a{ margin-right:12px; margin-bottom:12px; }
+}
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+	.layout190530085340 > a{ width:100%; text-align:center; }
+}
+/**/
+.news_event_sec{ padding-top:78px; }
+.portfolio_sec{ padding-top:100px; }
+/**/
+.layout190530090218{ font-size:0; }
+.layout190530090218 > .item{ display:inline-block; vertical-align:top; }
+.layout190530090218 > .item > .thumb{ width:100%; overflow:hidden; }
+.layout190530090218 > .item > .thumb{ transition:all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+.layout190530090218 > .item > .thumb:after{ background:rgba(236, 0, 140, 0.15); width:100%; height:100%; position:absolute; top:0px; left:0px; content:''; display:block; }
+.layout190530090218 > .item > .thumb:after{ opacity:0; }
+.layout190530090218 > .item > .thumb:after{ transition:all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+.layout190530090218 > .item:hover > .thumb:after{ opacity:1; }
+.layout190530090218 > .item > .thumb > div{ background-size:cover; background-repeat:no-repeat; background-position:center; }
+.layout190530090218 > .item > .thumb > div{ padding-bottom:71.05%; }
+.layout190530090218 > .item > .thumb > div{ transition:all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+/*.layout190530090218 > .item:hover > .thumb > div{ transform:scale(1.3); }*/
+.layout190530090218 > .item:hover > .thumb > div{ transform:scale(1.08); }
+.layout190530090218 > .item > .info{}
+.layout190530090218 > .item > .info > .date{ margin-top:14px; }
+.layout190530090218 > .item > .info > .title{ font-weight:bold; }
+
+
+/* 1024이상 - 데스크탑 or 테블릿 가로 이상▲ 화면[1200 PSD]*/
+@media all and (min-width:1024px){
+	.layout190530090218 > .item{ width:48.08%; }
+	.layout190530090218 > .item + .item{ margin-left:3.83%; }
+	.layout190530090218 > .item > .info > .date{ font-size:19px; }
+	.layout190530090218 > .item > .info > .title{ font-size:26px; line-height:35px;}
+}
+/* 768이상 ~ 1023이하 - 테블릿 세로 only 화면[768 PSD]*/
+@media all and (min-width:768px) and (max-width:1023px){
+    #body > .main {padding-bottom:58px;}
+    .news_event_sec {padding-top:46px;}
+    .portfolio_sec {padding-top:58px;}
+	.layout190530090218 > .item{ width:48.28%; }
+	.layout190530090218 > .item + .item{ margin-left:3.34%; }
+	.layout190530090218 > .item > .info > .date{font-size:16px; }
+	.layout190530090218 > .item > .info > .title{ font-weight:bold; font-size:16px; line-height:24px;}
+    
+}
+/* 767이하 - 휴대폰 이하▼ 화면[480 PSD]*/
+@media all and (max-width:767px){
+    #body > .main {padding-bottom:36px;}
+
+    .quick_link_sec {padding-top:64px;}
+    .news_event_sec {padding-top:42px;}
+    .portfolio_sec {padding-top:64px !important;}
+    .layout190530085340 > a {line-height: 60px;font-size:22px;}
+	.layout190530090218 > .item{ width:100%; }
+	.layout190530090218 > .item + .item{ margin-top:28px; }
+	.layout190530090218 > .item > .info > .date{margin-top:18px;  font-size:16px; }
+	.layout190530090218 > .item > .info > .title{ font-weight:bold; font-size:18px; line-height:24px; height:48px; }
+}
+/**/
+
+
+
+/* JM_CSS */
+@media all and (min-width:1022px) and (max-width:1440px){
+    #body > .main {padding-bottom:58px;}
+    .quick_link_sec {padding-top:58px;}
+    .news_event_sec {padding-top:43px;}
+    .portfolio_sec {padding-top:58px;}
+    .layout190530085340 > a {font-size:16px;padding:0px 13px;line-height: 34px;margin:0px 15px 15px 0px;}
+    .layout190530090218 > .item > .info > .date {font-size:16px;}
+    .layout190530090218 > .item > .info > .title {font-size:16px;line-height:24px;}
+}
+
+
+
+

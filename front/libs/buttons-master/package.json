@@ -1,0 +1,24 @@
+{
+  "name": "buttons",
+  "version": "1.0.0",
+  "description": "Collection of CSS buttons",
+  "main": "index.js",
+  "scripts": {
+    "dev": "grunt dev",
+    "build": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "buttons",
+    "css"
+  ],
+  "author": "loup-brun",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-dart-sass": "^1.1.3",
+    "grunt-postcss": "^0.9.0"
+  }
+}

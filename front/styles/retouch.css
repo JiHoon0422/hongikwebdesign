@@ -1,0 +1,72 @@
+
+/*이 파일 외에 참좋은 인터넷에서 작성하신 코드는 모두 그대로 두었습니다.*/
+/*이 파일에서 추가라고 되어있는 부분은 각 html 파일에도 해당 클래스를 사용하는 div 태그가 추가 되었습니다. 대부분 간격 조정을 위한 코드들입니다. */
+/*추가 코드들은 <br> 태그를 대신하기 위해서 사용되었습니다.*/
+	/* - <br>코드로는 학교 측에서 요청하는 수정사항을 반영하기 어려워 부득이하게 결정하였습니다.*/
+
+/*viewport 1440이하 1022이상(랩탑)*/
+@media (max-width: 1440px) and (min-width: 1022px)
+{
+
+/*추가*/
+.margin50-div{margin-top:50px;}
+.margin20-div{margin-top:20px;}
+.margin100-div{margin-top:100px;}
+/*추가*/
+
+/*/수정*/
+#body > .main{padding-bottom:100px;}
+#fold_breadcrumb{margin-bottom:20px;}
+.quick_link_sec{padding-top:50px;}
+.news_event_sec{padding-top:37px;}
+.tit0{margin-bottom:13px;}
+.layout190530090218 > .item > .info > .date{font-size:14px;}
+.layout190530090218 > .item > .info > .date{margin-top:13px; margin-bottom:4px;}
+.layout190530090218 > .item > .info > .title{line-height:22px;}
+.layout190530091445 > .item > .info{margin-top:13px;}
+.portfolio_sec{padding-top:42px;}
+.pb-17{padding-bottom:0px;}
+.txtr{margin-bottom:0px;}
+.txt0{margin-bottom:40px;}
+.txt2{margin-bottom:40px;}
+.history_table_box table td{width: 70%; font-size: 14px; text-align: left; border-bottom: 1px solid #000; line-height: 24px;}
+.history_table_box a{margin-top:20px;}
+.layout190624194440 > .item > .body{font-size:14px;}
+.layout190624194440 > .item:nth-child(n+3) {margin-top:42px;}
+.layout190716102812{margin-top:46px; margin-bottom:100px;}
+.layout190624195613 > .item > .info > .text1{font-size:14px;}
+.layout190624195613 > .item > .info > .text2{font-size:14px;}
+.layout190716102812 > .item .desc{font-size:14px;}
+.paging0{margin:40px 0px 0px 0px;}
+
+}
+
+
+@media (max-width: 767px){
+	/*추가*/
+	.margin48-div{margin-top:48px;}
+	.margin46-div{margin-top:46px;}
+	.margin64-div{margin-top:64px;}
+	/*추가*/
+
+	/*수정*/
+
+	/*breadcumb와 점보트론 사이 간격 수정*/
+	#body > .main{padding-top:50px;}
+	/*테이블 헤드 폰트사이즈 변경*/
+	.layout190624194440 > .item > .head{font-size:20px;}
+	
+	/*학과명 밑에 교수와 교수진 사이 테이블 간격 수정*/
+	.layout190716102812{margin:50px 0px 64px 0px;}
+	
+	/*학생작품과 페이지 넘버링 사이에 간격 28px*/
+	.paging0{margin-top:36px;}
+	
+	.tit0{margin-bottom:36px;}
+	
+	.history_table_box a{margin-top:36px;}
+	.pic img{width:100%;}
+	.btn190717091948{margin-top:36px; line-height: 60px; font-size: 18px; width: 100%;}
+	#yearSelect > .head > .label{text-align:right; color: #ff009b; padding-left: 25px; padding-right:40px; line-height: 49px;}
+	.history_table_box a{height:60px; line-height:60px;}
+}
